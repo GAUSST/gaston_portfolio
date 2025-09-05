@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">Gaoussou Diarra — Portfolio</title>
+  <meta name="description" data-i18n-attr="content:meta.desc"
+        content="Portfolio of Gaoussou Diarra — Web & Mobile Developer (HTML, CSS, JS, Angular, PHP/Laravel, MySQL, React, Flutter, Java, Spring Boot)." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome 6 Free (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+</head>
+<body>
+  <header class="nav" role="navigation" aria-label="Primary">
+    <div class="container nav-inner">
+      <div class="brand">Gaoussou&nbsp;Diarra <span class="chip">Portfolio</span></div>
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#languages" data-i18n="nav.languages">Languages</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="actions">
+      <button class="btn secondary icon-btn" id="themeToggle"
+        aria-pressed="false" aria-label="Toggle theme" title="Toggle theme">
+        <span class="visually-hidden">Toggle theme</span>
+        <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
+      </button>
+
+        <a class="btn cv" href="" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / About -->
+    <section class="hero container" id="about">
+      <div class="hero-grid">
+        <div class="card reveal">
+          <h1 class="title-xl" data-i18n="hero.title">Web & Mobile Developer</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">Passionate about …</p>
+          <div class="kpis" style="margin-top: 1rem;">
+            <span class="kpi" data-i18n="hero.kpi1">Casablanca, Morocco</span>
+            <span class="kpi" data-i18n="hero.kpi2">Available for projects</span>
+            <span class="kpi" data-i18n="hero.kpi3">HTML • CSS • …</span>
+          </div>
+        </div>
+        <div class="card reveal about">
+          <div>
+            <div class="avatar" aria-hidden="true">GD</div>
+          </div>
+          <div>
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.p1" data-i18n-html>Hello! I’m …</p>
+            <p class="small" data-i18n="about.p2">Fluent in French & English …</p>
+            <div class="pill-group" style="margin-top:.75rem;">
+              <span class="chip" data-i18n="about.traits.0">Creativity</span>
+              <span class="chip" data-i18n="about.traits.1">Perseverance</span>
+              <span class="chip" data-i18n="about.traits.2">Curiosity</span>
+              <span class="chip" data-i18n="about.traits.3">Collaboration</span>
+              <span class="chip" data-i18n="about.traits.4">Self-taught</span>
+              <span class="chip" data-i18n="about.traits.5">Interpersonal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" data-i18n="skills.title">Skills</h2>
+      <div class="card skills reveal">
+        <div class="pill-group" role="list">
+          <span class="tag" data-type="frontend" role="listitem">HTML</span>
+          <span class="tag" data-type="frontend" role="listitem">CSS</span>
+          <span class="tag" data-type="frontend" role="listitem">Sass</span>
+          <span class="tag" data-type="frontend" role="listitem">Bootstrap</span>
+          <span class="tag" data-type="frontend" role="listitem">JavaScript</span>
+          <span class="tag" data-type="frontend" role="listitem">React</span>
+          <span class="tag" data-type="frontend" role="listitem">Angular</span>
+          <span class="tag" data-type="backend" role="listitem">PHP</span>
+          <span class="tag" data-type="backend" role="listitem">Laravel</span>
+          <span class="tag" data-type="backend" role="listitem">MySQL</span>
+          <span class="tag" data-type="mobile" role="listitem">Flutter</span>
+          <span class="tag" data-type="mobile" role="listitem">Dart</span>
+          <span class="tag" data-type="backend" role="listitem">Java</span>
+          <span class="tag" data-type="backend" role="listitem">Spring Boot</span>
+          <span class="tag" data-type="backend" role="listitem">Python</span>
+          <span class="tag" data-type="tool" role="listitem">Git/GitHub/GitLab</span>
+        </div>
+        <p class="small" style="margin-top:.75rem">Tip: click any skill to filter projects that match it.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="search" style="margin-bottom:.75rem;">
+        <input type="search" id="projectSearch"
+               data-i18n-attr="placeholder:projects.searchPH"
+               placeholder="Search projects…" aria-label="Search projects" />
+      </div>
+      <h2 id="projects-title" data-i18n="projects.title">Projects</h2>
+      <div id="projectList" class="grid grid-2"></div>
+      <div id="emptyState" class="empty" hidden data-i18n="projects.empty">No projects …</div>
+    </section>
+
+    <section class="section container" id="experience">
+      <h2 id="exp-title" data-i18n="exp.title">Experience</h2>
+      <div class="card reveal timeline"></div>
+    </section>
+
+    <section class="section container" id="education">
+      <h2 id="edu-title" data-i18n="edu.title">Education</h2>
+      <div class="card reveal timeline"></div>
+    </section>
+
+    <section class="section container" id="languages">
+      <h2 id="lang-title" data-i18n="langs.title">Languages</h2>
+      <div class="grid grid-3"></div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <p><strong data-i18n="contact.emailLbl">Email:</strong> <a href="mailto:gdiarrag@gmail.com">gdiarrag@gmail.com</a></p>
+          <p><strong data-i18n="contact.phoneLbl">Phone:</strong> <a href="tel:+212779043150">+212 779043150</a></p>
+          <p><strong data-i18n="contact.locationLbl">Location:</strong> Near Casa Voyageurs, Casablanca</p>
+          <div class="pill-group" style="margin-top:.5rem">
+            <a class="btn secondary" href="mailto:gdiarrag@gmail.com" data-i18n="contact.emailMe">Email me</a>
+            <button class="btn secondary" id="copyEmail">Copy email</button>
+          </div>
+        </div>
+        <form class="card reveal" id="form" action="https://formspree.io/f/xblapvvj" method="POST" aria-label="Contact form">
+          <input id="email" name="email" required class="input"
+                 data-i18n-attr="placeholder:contact.formPHEmail" placeholder="Your email" />
+          <input id="message" name="message" required class="input"
+                 data-i18n-attr="placeholder:contact.formPHMsg" placeholder="Your message" />
+          <button class="btn" id="form-button" data-i18n="contact.quickSend">Quick send</button>
+          <p class="small" data-i18n="contact.formNote">Reach out …</p>
+          <p id="orm-status"></p>
+        </form>
+        <style>
+            .input { margin-bottom: .75rem; padding: .75rem 1rem; border-radius: 12px; border: 1px solid color-mix(in oklab, var(--text) 8%, transparent); background: var(--panel-2); color: var(--text); }
+            .input:focus { box-shadow: var(--ring); outline: none; }
+          </style>
+          <script>
+            var form = document.getElementById("form");
+            
+            async function handleSubmit(event) {
+              event.preventDefault();
+              var status = document.getElementById("form-status");
+              var data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+              }).then(response => {
+                if (response.ok) {
+                  status.innerHTML = "Thanks for your submission!";
+                  form.reset()
+                } else {
+                  response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                      status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                  })
+                }
+              }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              });
+            }
+            form.addEventListener("submit", handleSubmit)
+          </script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Gaoussou Diarra · <span data-i18n="footer.copy">Portfolio project</span></div>
+  </footer>
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
