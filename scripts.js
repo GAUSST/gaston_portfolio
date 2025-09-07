@@ -215,6 +215,7 @@ MOBILE_MQ.addEventListener?.("change", relocateNavUtilities);
     cv_btn.href =
       lang === "fr" ? "assets/Dev_CV_French.pdf" : "assets/Dev_CV_English.pdf";
   };
+  relocateNavUtilities();
 })();
 
 function getByPath(obj, path) {
