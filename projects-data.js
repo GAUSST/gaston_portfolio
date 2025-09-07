@@ -22,7 +22,7 @@ export const PROJECTS = [
       "Angular",
       "Git",
     ],
-    image: "./assets/geotrac.jpg",
+    image: "./assets/geotrac.png",
     link: "https://site.geotrac.io",
   },
   {
@@ -123,7 +123,7 @@ export const PROJECTS = [
     description_fr:
       "API qui supprime les arrière-plans d’images avec deep learning. Rapide, facile à intégrer, fonctionne avec images uniques ou en lot, et supporte remplacements automatiques et manuels.",
     tags: ["Backend", "Python", "Flask", "TensorFlow", "OpenCV"],
-    image: "./assets/no-image.jpeg",
+    image: "./assets/retouching.png",
   },
   {
     title: "E-commerce Image AI Agent",
@@ -134,7 +134,7 @@ export const PROJECTS = [
     description_fr:
       "Agent IA cloud-native pour trier la qualité des images produits e-commerce. Utilise Google Drive API, GPT-5 Vision et Google Cloud Run/Scheduler pour classer les images en PRÊTE, À_MODIFIER ou À_REPRENDRE, et les trier automatiquement dans les bons dossiers Drive.",
     tags: ["Backend", "Python", "Uvicorn", "GoogleCloud", "GPT-5"],
-    image: "./assets/no-image.jpeg",
+    image: "./assets/classification.png",
   },
   {
     title: "Shop Management/Inventory Page",

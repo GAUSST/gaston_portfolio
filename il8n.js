@@ -18,7 +18,7 @@ export const I18N = {
     },
     about: {
       title: "About",
-      p1: "Hello! I’m <strong>Gaoussou Diarra</strong>, a developer who loves building useful, clean and reliable products. I enjoy full-stack web work and mobile too. I believe in pragmatic design, accessible UI, and code you can maintain.",
+      p1: "Hello! I’m <strong>Gaoussou Diarra</strong>, I’m a passionate developer who thrives on turning ideas into clean, reliable, and impactful products. I enjoy working across the stack—whether it’s crafting smooth web experiences or building intuitive mobile apps.",
       p2: "Fluent in French & English. Open to internships, freelance or full-time roles.",
       traits: [
         "Creativity",
@@ -58,16 +58,15 @@ export const I18N = {
     ],
     education: [
       {
-        title:
-          "Université EST - Hassan II (Ecole Supérieure de Technologie) (Morocco)",
-        period: "Sep 2023 – Present",
+        title: "Bachelor's Degree - Computer Science",
+        period: "Université Hassan II (Morocco) · Sep 2023 – Present",
       },
       {
         title: "English & TOEFL Proficiency",
-        period: "Nov 2022 – May 2023 · The Modern English School (Ghana)",
+        period: "The Modern English School (Ghana) · Nov 2022 – May 2023",
       },
       {
-        title: "Malian Baccalaureate — Exact Sciences",
+        title: "High School Diploma — Exact Sciences",
         period: "2020 – 2021",
       },
     ],
@@ -111,7 +110,7 @@ export const I18N = {
     },
     about: {
       title: "À propos",
-      p1: "Bonjour ! Je suis <strong>Gaoussou Diarra</strong>, un développeur qui aime créer des produits utiles, propres et fiables. J’aime le full-stack web et le mobile. Je crois en un design pragmatique, des interfaces accessibles et un code maintenable.",
+      p1: "Bonjour ! Je suis <strong>Gaoussou Diarra</strong>, un développeur passionné qui aime transformer les idées en produits propres, fiables et impactants. J'apprécie travailler sur toute la stack — que ce soit pour créer des expériences web fluides ou développer des applications mobiles intuitives.",
       p2: "Français & anglais courants. Ouvert aux stages, missions freelance et postes à temps plein.",
       traits: [
         "Créativité",
@@ -151,16 +150,15 @@ export const I18N = {
     ],
     education: [
       {
-        title:
-          "Université EST - Hassan II (Ecole Supérieure de Technologie) (Morocco)",
-        period: "Sep 2023 – Actuellement",
+        title: "Licence en Informatique",
+        period: "Université Hassan II (Maroc) · Sep 2023 – Présent",
       },
       {
         title: "Anglais & TOEFL",
-        period: "Nov 2022 – Mai 2023 · The Modern English School (Ghana)",
+        period: "The Modern English School (Ghana) · Nov 2022 – Mai 2023",
       },
       {
-        title: "Baccalauréat malien — Sciences exactes",
+        title: "Diplôme de Baccalauréat — Sciences exactes",
         period: "2020 – 2021",
       },
     ],
