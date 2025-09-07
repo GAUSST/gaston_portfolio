@@ -225,7 +225,7 @@ function getByPath(obj, path) {
 }
 
 /* =========================================================
-   Static sections (Experience, Education, Languages)
+   Static sections (Experience, Education, Language)
 ========================================================= */
 function renderExperience() {
   const box = document.querySelector("#experience .timeline");
