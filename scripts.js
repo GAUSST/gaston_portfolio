@@ -73,9 +73,7 @@ let lang =
 const cv_btn = document.querySelector(".actions .btn.cv");
 
 cv_btn.href =
-  lang === "fr"
-    ? "assets/Dev CV_French.pdf"
-    : "assets/Dev CV_English.pdf";
+  lang === "fr" ? "assets/Dev_CV_French.pdf" : "assets/Dev_CV_English.pdf";
 
 /* ---------- MENU TOGGLE (inject) ---------- */
 function mountMenuToggle() {
@@ -194,8 +192,6 @@ function relocateNavUtilities() {
 relocateNavUtilities();
 MOBILE_MQ.addEventListener?.("change", relocateNavUtilities);
 
-
-
 /* ---------- language toggle ---------- */
 (function mountLangToggle() {
   const actions = document.querySelector("header.nav .actions");
@@ -217,9 +213,7 @@ MOBILE_MQ.addEventListener?.("change", relocateNavUtilities);
     applyI18n();
     refreshList(); // re-render projects localized
     cv_btn.href =
-      lang === "fr"
-        ? "assets/Dev CV_French.pdf"
-        : "assets/Dev CV_English.pdf";
+      lang === "fr" ? "assets/Dev_CV_French.pdf" : "assets/Dev_CV_English.pdf";
   };
 })();
 
@@ -469,7 +463,7 @@ function refreshList() {
 /* =========================================================
    Scroll spy
 ========================================================= */
-const navLinks = [...document.querySelectorAll(".nav-links a")];
+const navLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
 const sections = navLinks
   .map((a) => document.querySelector(a.getAttribute("href")))
   .filter(Boolean);
