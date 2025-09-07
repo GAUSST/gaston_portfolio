@@ -19,7 +19,7 @@ export const I18N = {
     about: {
       title: "About",
       p1: "Hello! I’m <strong>Gaoussou Diarra</strong>, a developer who loves building useful, clean and reliable products. I enjoy full-stack web work and mobile too. I believe in pragmatic design, accessible UI, and code you can maintain.",
-      p2: "Fluent in French & English. Currently near Casa Voyageurs (Casablanca). Open to internships, freelance or full-time roles.",
+      p2: "Fluent in French & English. Open to internships, freelance or full-time roles.",
       traits: [
         "Creativity",
         "Perseverance",
@@ -46,8 +46,8 @@ export const I18N = {
     langs: { title: "Languages" },
     experience: [
       {
-        title: "Part-time Web Developer Intern — Fidelity",
-        period: "Oct 2023 – Jun 2025 · Casablanca (Remote/Hybrid)",
+        title: "Web/Mobile Developer — Fidelity",
+        period: "Oct 2023 – Jun 2025 · Casablanca (Remote)",
         desc: "Support on web & mobile features, UI improvements, and marketplace flows.",
       },
       {
@@ -112,7 +112,7 @@ export const I18N = {
     about: {
       title: "À propos",
       p1: "Bonjour ! Je suis <strong>Gaoussou Diarra</strong>, un développeur qui aime créer des produits utiles, propres et fiables. J’aime le full-stack web et le mobile. Je crois en un design pragmatique, des interfaces accessibles et un code maintenable.",
-      p2: "Français & anglais courants. Actuellement près de Casa Voyageurs (Casablanca). Ouvert aux stages, missions freelance et postes à temps plein.",
+      p2: "Français & anglais courants. Ouvert aux stages, missions freelance et postes à temps plein.",
       traits: [
         "Créativité",
         "Persévérance",
@@ -139,8 +139,8 @@ export const I18N = {
     langs: { title: "Langues" },
     experience: [
       {
-        title: "Stagiaire développeur web à temps partiel — Fidelity",
-        period: "Oct 2023 – Juin 2025 · Casablanca (Remote/Hybride)",
+        title: "Développeur web/mobile — Fidelity",
+        period: "Oct 2023 – Juin 2025 · Casablanca (À distance)",
         desc: "Support sur des fonctionnalités web & mobile, améliorations UI et parcours marketplace.",
       },
       {
