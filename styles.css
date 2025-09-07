@@ -66,8 +66,6 @@ body {
     z-index: 60;
   }
   html.nav-open .nav-links { display: flex; }
-
-  /* Shorten CV button label on small screens (use .short/.label spans if you want) */
   .actions .btn.cv .label { display: none; }
   .actions .btn.cv .short { display: inline; }
 }
@@ -303,7 +301,7 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
 #contact::after {
   content: "";
   display: block;
-  height: 20vh;        /* tweak between 20–35vh if needed */
+  height: 20vh;
 }
 .about {
   display: grid;
@@ -311,6 +309,11 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
   gap: 1rem;
   align-items: start;
 }
+.about > h1.title-xl {
+  grid-column: 1 / -1;
+  margin: 0 0 .5rem;
+}
+
 @media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr;

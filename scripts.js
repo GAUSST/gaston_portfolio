@@ -148,6 +148,53 @@ function mountMenuToggle() {
 }
 mountMenuToggle();
 
+/* ---------- Move toggles & CV into menu on mobile ---------- */
+const MOBILE_MQ = window.matchMedia("(max-width: 900px)");
+
+function ensureNavUtilitiesContainer() {
+  const nav = document.querySelector(".nav-links");
+  if (!nav) return null;
+  let utils = nav.querySelector(".nav-utilities");
+  if (!utils) {
+    utils = document.createElement("div");
+    utils.className = "nav-utilities";
+    nav.appendChild(utils);
+  }
+  return utils;
+}
+
+function relocateNavUtilities() {
+  const actions = document.querySelector("header.nav .actions");
+  const nav = document.querySelector(".nav-links");
+  if (!actions || !nav) return;
+
+  const utils = ensureNavUtilitiesContainer();
+  if (!utils) return;
+
+  // Grab current elements (they might already be in utils or actions)
+  const theme = document.getElementById("themeToggle");
+  const lang = document.getElementById("langToggle");
+  // CV might be inside actions or already moved
+  const cv =
+    document.querySelector(".actions .btn.cv") ||
+    document.querySelector(".nav-utilities .btn.cv");
+
+  const widgets = [lang, theme, cv].filter(Boolean);
+
+  if (MOBILE_MQ.matches) {
+    // Move into the drawer
+    widgets.forEach((el) => utils.appendChild(el));
+  } else {
+    // Move back to header action bar
+    widgets.forEach((el) => actions.appendChild(el));
+  }
+}
+
+// Run once and on viewport changes
+relocateNavUtilities();
+MOBILE_MQ.addEventListener?.("change", relocateNavUtilities);
+
+
 
 /* ---------- language toggle ---------- */
 (function mountLangToggle() {

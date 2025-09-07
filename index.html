@@ -25,12 +25,12 @@
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="actions">
-      <button class="btn secondary icon-btn" id="themeToggle"
-        aria-pressed="false" aria-label="Toggle theme" title="Toggle theme">
-        <span class="visually-hidden">Toggle theme</span>
-        <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
-        <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
-      </button>
+        <button class="btn secondary icon-btn" id="themeToggle"
+          aria-pressed="false" aria-label="Toggle theme" title="Toggle theme">
+          <span class="visually-hidden">Toggle theme</span>
+          <i class="fa-solid fa-sun sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
+        </button>
 
         <a class="btn cv" href="" target="_blank" rel="noopener">Download CV</a>
       </div>
@@ -40,36 +40,30 @@
   <main>
     <!-- Hero / About -->
     <section class="hero container" id="about">
-      <div class="hero-grid">
-        <div class="card reveal">
-          <h1 class="title-xl" data-i18n="hero.title">Web & Mobile Developer</h1>
-          <p class="subtitle" data-i18n="hero.subtitle">Passionate about …</p>
-          <div class="kpis" style="margin-top: 1rem;">
-            <span class="kpi" data-i18n="hero.kpi1">Casablanca, Morocco</span>
-            <span class="kpi" data-i18n="hero.kpi2">Available for projects</span>
-            <span class="kpi" data-i18n="hero.kpi3">HTML • CSS • …</span>
-          </div>
+    <div class="hero-grid">
+      <div class="card reveal about">
+        <h1 class="title-xl" data-i18n="hero.title">Web & Mobile Developer</h1>
+
+        <div>
+          <div class="avatar" aria-hidden="true">GD</div>
         </div>
-        <div class="card reveal about">
-          <div>
-            <div class="avatar" aria-hidden="true">GD</div>
-          </div>
-          <div>
-            <h2 data-i18n="about.title">About</h2>
-            <p data-i18n="about.p1" data-i18n-html>Hello! I’m …</p>
-            <p class="small" data-i18n="about.p2">Fluent in French & English …</p>
-            <div class="pill-group" style="margin-top:.75rem;">
-              <span class="chip" data-i18n="about.traits.0">Creativity</span>
-              <span class="chip" data-i18n="about.traits.1">Perseverance</span>
-              <span class="chip" data-i18n="about.traits.2">Curiosity</span>
-              <span class="chip" data-i18n="about.traits.3">Collaboration</span>
-              <span class="chip" data-i18n="about.traits.4">Self-taught</span>
-              <span class="chip" data-i18n="about.traits.5">Interpersonal</span>
-            </div>
+        <div>
+          <h2 data-i18n="about.title">About</h2>
+          <p data-i18n="about.p1" data-i18n-html>Hello! I’m …</p>
+          <p class="small" data-i18n="about.p2">Fluent in French & English …</p>
+          <div class="pill-group" style="margin-top:.75rem;">
+            <span class="chip" data-i18n="about.traits.0">Creativity</span>
+            <span class="chip" data-i18n="about.traits.1">Perseverance</span>
+            <span class="chip" data-i18n="about.traits.2">Curiosity</span>
+            <span class="chip" data-i18n="about.traits.3">Collaboration</span>
+            <span class="chip" data-i18n="about.traits.4">Self-taught</span>
+            <span class="chip" data-i18n="about.traits.5">Interpersonal</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- Skills -->
     <section class="section container" id="skills" aria-labelledby="skills-title">
@@ -133,7 +127,7 @@
         <div class="card reveal">
           <p><strong data-i18n="contact.emailLbl">Email:</strong> <a href="mailto:gdiarrag@gmail.com">gdiarrag@gmail.com</a></p>
           <p><strong data-i18n="contact.phoneLbl">Phone:</strong> <a href="tel:+212779043150">+212 779043150</a></p>
-          <p><strong data-i18n="contact.locationLbl">Location:</strong> Near Casa Voyageurs, Casablanca</p>
+          <!-- <p><strong data-i18n="contact.locationLbl">Location:</strong> Near Casa Voyageurs, Casablanca</p> -->
           <div class="pill-group" style="margin-top:.5rem">
             <a class="btn secondary" href="mailto:gdiarrag@gmail.com" data-i18n="contact.emailMe">Email me</a>
             <button class="btn secondary" id="copyEmail">Copy email</button>

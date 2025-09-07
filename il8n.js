@@ -15,11 +15,6 @@ export const I18N = {
     },
     hero: {
       title: "Web & Mobile Developer",
-      subtitle:
-        "Passionate about innovative tech, AI, robotics and cybersecurity — always learning and shipping.",
-      kpi1: "Casablanca, Morocco",
-      kpi2: "Available for projects",
-      kpi3: "HTML • CSS • JS • Angular • PHP/Laravel • MySQL • React • Flutter • Java • Spring Boot • Git",
     },
     about: {
       title: "About",
@@ -79,9 +74,9 @@ export const I18N = {
     languages: [
       { name: "French", level: "Fluent", percent: 95 },
       { name: "English", level: "Fluent", percent: 90 },
-      { name: "Arabic", level: "Enhancing", percent: 45 },
+      { name: "Arabic", level: "Enhancing", percent: 55 },
       { name: "Japanese", level: "Fundamental", percent: 30 },
-      { name: "Bambara", level: "Indigenous", percent: 75 },
+      { name: "Bambara", level: "Indigenous", percent: 100 },
     ],
     contact: {
       title: "Contact",
@@ -113,11 +108,6 @@ export const I18N = {
     },
     hero: {
       title: "Développeur Web & Mobile",
-      subtitle:
-        "Passionné par les technologies innovantes, l’IA, la robotique et la cybersécurité — toujours en apprentissage et en delivery.",
-      kpi1: "Casablanca, Maroc",
-      kpi2: "Disponible pour des projets",
-      kpi3: "HTML • CSS • JS • Angular • PHP/Laravel • MySQL • React • Flutter • Java • Spring Boot • Git",
     },
     about: {
       title: "À propos",
@@ -176,8 +166,8 @@ export const I18N = {
     ],
     languages: [
       { name: "Français", level: "Courant", percent: 95 },
-      { name: "Anglais", level: "Courant", percent: 85 },
-      { name: "Arabe", level: "En amélioration", percent: 65 },
+      { name: "Anglais", level: "Courant", percent: 90 },
+      { name: "Arabe", level: "En amélioration", percent: 55 },
       { name: "Japonais", level: "Notions", percent: 30 },
       { name: "Bambara", level: "Langue maternelle", percent: 100 },
     ],
