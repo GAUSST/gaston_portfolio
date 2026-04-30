@@ -18,8 +18,6 @@ This repository contains Gaoussou Diarra's personal developer portfolio. It pres
 - Projects
 - Skills
 - Experience
-- Education
-- Languages
 - Contact
 
 ## Run Locally

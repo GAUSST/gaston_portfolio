@@ -6,9 +6,9 @@ export const I18N = {
     },
     nav: {
       services: "Services",
+      packages: "Packages",
       skills: "Skills",
       projects: "Projects",
-      experience: "Experience",
       contact: "Contact",
     },
     actions: {
@@ -16,6 +16,8 @@ export const I18N = {
     },
     hero: {
       title: "I build websites, apps, MVPs, and AI-assisted workflows.",
+      ctaPrimary: "Start a project",
+      ctaSecondary: "View projects",
     },
     about: {
       title: "About",
@@ -146,6 +148,7 @@ export const I18N = {
       phoneLbl: "Phone:",
       locationLbl: "Location:",
       emailMe: "Email me",
+      whatsappMe: "WhatsApp me",
       copyEmail: "Copy email",
       copied: "Copied!",
       quickSend: "Send project request",
@@ -170,9 +173,9 @@ export const I18N = {
     },
     nav: {
       services: "Services",
+      packages: "Offres",
       skills: "Compétences",
       projects: "Projets",
-      experience: "Expérience",
       contact: "Contact",
     },
     actions: {
@@ -180,6 +183,8 @@ export const I18N = {
     },
     hero: {
       title: "Je crée des sites web, applications, MVP et workflows assistés par IA.",
+      ctaPrimary: "Démarrer un projet",
+      ctaSecondary: "Voir mes projets",
     },
     about: {
       title: "À propos",
@@ -196,7 +201,7 @@ export const I18N = {
       ],
     },
     services: {
-      title: "Ce que je construit generalement",
+      title: "Ce que je construis",
       items: [
         {
           icon: "fa-solid fa-globe",
@@ -310,6 +315,7 @@ export const I18N = {
       phoneLbl: "Téléphone :",
       locationLbl: "Localisation :",
       emailMe: "M’écrire",
+      whatsappMe: "Me contacter sur WhatsApp",
       copyEmail: "Copier l’email",
       copied: "Copié !",
       quickSend: "Envoyer la demande",
