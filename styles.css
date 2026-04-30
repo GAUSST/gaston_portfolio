@@ -247,6 +247,25 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
 .subtitle {
   color: var(--muted);
 }
+.hero-summary,
+.hero-secondary {
+  margin: 0;
+}
+.hero-summary {
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+.about-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+.trust-line {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  background: color-mix(in oklab, var(--panel-2) 86%, var(--brand-2) 14%);
+  border: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+}
 .grid {
   display: grid;
   gap: 1rem;
@@ -273,6 +292,10 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
 .section h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin: 0 0 1rem;
+}
+.service-grid,
+.package-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .kpis {
   display: flex;
@@ -401,6 +424,73 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
   gap: .5rem;
   margin-top: .75rem;
 }
+.project-value {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid color-mix(in oklab, var(--brand) 18%, var(--text) 8%);
+  background: color-mix(in oklab, var(--panel-2) 82%, var(--brand-2) 18%);
+  color: var(--text);
+}
+.service-card,
+.package-card {
+  display: grid;
+  gap: 0.9rem;
+}
+.service-card h3,
+.package-card h3 {
+  margin: 0;
+}
+.service-card p,
+.package-card p {
+  margin: 0;
+}
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-grid;
+  place-items: center;
+  background: color-mix(in oklab, var(--panel-2) 70%, var(--brand) 30%);
+  color: var(--text);
+  border: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+  font-size: 1.05rem;
+}
+.package-head {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.package-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: color-mix(in oklab, var(--text) 88%, var(--brand) 12%);
+}
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.feature-list li {
+  padding-left: 1.4rem;
+  position: relative;
+  color: var(--muted);
+}
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+}
+.package-cta {
+  justify-content: center;
+}
 
 .timeline {
   position: relative;
@@ -466,6 +556,24 @@ html[data-theme="dark"] .icon-btn .moon { display: inline-block; }
   border: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
   background: var(--panel-2);
   color: var(--text);
+}
+.input {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+  background: var(--panel-2);
+  color: var(--text);
+  font: inherit;
+}
+.input:focus {
+  box-shadow: var(--ring);
+  outline: none;
+}
+.textarea {
+  min-height: 160px;
+  resize: vertical;
 }
 .empty {
   opacity: 0.6;
