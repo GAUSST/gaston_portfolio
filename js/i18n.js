@@ -71,11 +71,12 @@ export const I18N = {
     packages: {
       title: "Simple Packages",
       cta: "Start a project",
+      note: "Partner and white-label pricing available for marketers, consultants, designers, and small agencies.",
       items: [
         {
           icon: "fa-solid fa-rocket",
           title: "Website Launch",
-          price: "From $500",
+          price: "From $900",
           text: "For businesses, NGOs, consultants, and founders who need a professional online presence.",
           includes: [
             "1–5 pages",
@@ -89,7 +90,7 @@ export const I18N = {
         {
           icon: "fa-solid fa-layer-group",
           title: "MVP / Dashboard Sprint",
-          price: "From $1,000",
+          price: "From $1,800",
           text: "For founders and teams who need a simple working product to test or manage operations.",
           includes: [
             "Product scope",
@@ -103,7 +104,7 @@ export const I18N = {
         {
           icon: "fa-solid fa-gears",
           title: "AI / E-commerce Automation",
-          price: "From $700",
+          price: "From $1,200",
           text: "For sellers, marketplaces, and businesses that want to save time with automation.",
           includes: [
             "Product image workflow",
@@ -142,8 +143,9 @@ export const I18N = {
       ctaSecondary: "Send me a client page",
     },
     skills: {
-      title: "Skills",
-      tip: "Tip: click any skill to filter projects that match it.",
+      title: "Technical Stack",
+      intro: "Technologies I use to build reliable websites, apps, dashboards, and automations.",
+      tip: "Click a technology to see related projects.",
     },
     projects: {
       title: "Projects",
@@ -263,11 +265,12 @@ export const I18N = {
     packages: {
       title: "Offres simples",
       cta: "Démarrer un projet",
+      note: "Tarifs partenaires et marque blanche disponibles pour marketeurs, consultants, designers et petites agences.",
       items: [
         {
           icon: "fa-solid fa-rocket",
           title: "Lancement site web",
-          price: "À partir de 500 $",
+          price: "À partir de 900 $",
           text: "Pour les entreprises, ONG, consultants et fondateurs qui ont besoin d’une présence en ligne professionnelle.",
           includes: [
             "1 à 5 pages",
@@ -281,7 +284,7 @@ export const I18N = {
         {
           icon: "fa-solid fa-layer-group",
           title: "Sprint MVP / Dashboard",
-          price: "À partir de 1 000 $",
+          price: "À partir de 1 800 $",
           text: "Pour les fondateurs et équipes qui ont besoin d’un produit simple pour tester une idée ou gérer des opérations.",
           includes: [
             "Cadrage produit",
@@ -295,7 +298,7 @@ export const I18N = {
         {
           icon: "fa-solid fa-gears",
           title: "Automatisation IA / E-commerce",
-          price: "À partir de 700 $",
+          price: "À partir de 1 200 $",
           text: "Pour les vendeurs, marketplaces et entreprises qui veulent gagner du temps grâce à l’automatisation.",
           includes: [
             "Workflow image produit",
@@ -334,8 +337,9 @@ export const I18N = {
       ctaSecondary: "Envoyez-moi une page client",
     },
     skills: {
-      title: "Compétences",
-      tip: "Astuce : cliquez une compétence pour filtrer les projets correspondants.",
+      title: "Stack technique",
+      intro: "Technologies que j’utilise pour créer des sites, applications, dashboards et automatisations fiables.",
+      tip: "Cliquez sur une technologie pour voir les projets associés.",
     },
     projects: {
       title: "Projets",
