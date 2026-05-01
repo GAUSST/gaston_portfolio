@@ -116,6 +116,27 @@ export const I18N = {
         },
       ],
     },
+    partner: {
+      title: "Partner With Me",
+      p1: "Are you a marketer, designer, consultant, or small agency?",
+      p2: "I can help you deliver websites, landing pages, dashboards, e-commerce systems, and AI-assisted workflows for your clients.",
+      p3: "You keep the client relationship. I handle the technical build.",
+      options: {
+        referral: {
+          title: "Referral",
+          text: "Introduce a client and earn 10% if the project closes",
+        },
+        collaboration: {
+          title: "Collaboration",
+          text: "We work together on the client project",
+        },
+        whiteLabel: {
+          title: "White-label",
+          text: "You sell the service, I build behind the scenes",
+        },
+      },
+      cta: "Become a partner",
+    },
     skills: {
       title: "Skills",
       tip: "Tip: click any skill to filter projects that match it.",
@@ -282,6 +303,27 @@ export const I18N = {
           ],
         },
       ],
+    },
+    partner: {
+      title: "Collaborer avec moi",
+      p1: "Vous êtes marketeur, designer, consultant ou petite agence ?",
+      p2: "Je peux vous aider à livrer des sites web, landing pages, dashboards, systèmes e-commerce et workflows assistés par IA pour vos clients.",
+      p3: "Vous gardez la relation client. Je m’occupe de la partie technique.",
+      options: {
+        referral: {
+          title: "Recommandation",
+          text: "Présentez un client et recevez 10 % si le projet est signé",
+        },
+        collaboration: {
+          title: "Collaboration",
+          text: "Nous travaillons ensemble sur le projet client",
+        },
+        whiteLabel: {
+          title: "Marque blanche",
+          text: "Vous vendez le service, je réalise la partie technique en coulisses",
+        },
+      },
+      cta: "Devenir partenaire",
     },
     skills: {
       title: "Compétences",
