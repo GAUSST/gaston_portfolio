@@ -18,8 +18,8 @@
       <nav class="nav-links">
         <a href="#services" data-i18n="nav.services">Services</a>
         <a href="#packages" data-i18n="nav.packages">Packages</a>
+        <a href="#partners" data-i18n="nav.partners">Partners</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="actions">
@@ -76,32 +76,41 @@
     <section class="section container" id="packages" aria-labelledby="packages-title">
       <h2 id="packages-title" data-i18n="packages.title">Simple Packages</h2>
       <div id="packagesGrid" class="grid package-grid"></div>
-      <article class="card reveal referral-card">
-        <div class="referral-copy">
+    </section>
+
+    <section class="section container partner-section" id="partners" aria-labelledby="partners-title">
+      <h2 id="partners-title" data-i18n="partner.title">Partner With Me</h2>
+      <div class="card reveal partner-card">
+        <div class="partner-intro">
           <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-handshake-angle"></i></div>
-          <div class="referral-body">
-            <h3 data-i18n="partner.title">Partner With Me</h3>
-            <p data-i18n="partner.p1">Are you a marketer, designer, consultant, or small agency?</p>
-            <p data-i18n="partner.p2">I can help you deliver websites, landing pages, dashboards, e-commerce systems, and AI-assisted workflows for your clients.</p>
-            <p class="small referral-example" data-i18n="partner.p3">You keep the client relationship. I handle the technical build.</p>
-            <div class="partner-options">
-              <div class="partner-option">
-                <strong data-i18n="partner.options.referral.title">Referral</strong>
-                <span class="small" data-i18n="partner.options.referral.text">Introduce a client and earn 10% if the project closes</span>
-              </div>
-              <div class="partner-option">
-                <strong data-i18n="partner.options.collaboration.title">Collaboration</strong>
-                <span class="small" data-i18n="partner.options.collaboration.text">We work together on the client project</span>
-              </div>
-              <div class="partner-option">
-                <strong data-i18n="partner.options.whiteLabel.title">White-label</strong>
-                <span class="small" data-i18n="partner.options.whiteLabel.text">You sell the service, I build behind the scenes</span>
-              </div>
-            </div>
+          <div>
+            <p class="small" data-i18n="partner.subtitle">For marketers, designers, consultants, and small agencies.</p>
+            <p data-i18n="partner.introQuestion">Do your clients need websites, landing pages, dashboards, e-commerce systems, or automation?</p>
+            <p data-i18n="partner.p1">I can support you as a technical partner behind the scenes.</p>
+            <p class="small" data-i18n="partner.p2">You keep the client relationship. I handle the technical build.</p>
+            <p class="small" data-i18n="partner.p3">We agree on a referral fee, collaboration split, or white-label delivery price.</p>
           </div>
         </div>
-        <a class="btn secondary" href="#contact" data-i18n="partner.cta">Become a partner</a>
-      </article>
+        <p class="partner-highlight" data-i18n="partner.highlight">You bring the client. I make the digital product real.</p>
+        <div class="grid grid-3 partner-options">
+          <article class="partner-option">
+            <strong data-i18n="partner.options.referral.title">Referral</strong>
+            <p class="small" data-i18n="partner.options.referral.text">Introduce a client and earn 10% if the project closes.</p>
+          </article>
+          <article class="partner-option">
+            <strong data-i18n="partner.options.collaboration.title">Collaboration</strong>
+            <p class="small" data-i18n="partner.options.collaboration.text">We work together on the project, each handling our part.</p>
+          </article>
+          <article class="partner-option">
+            <strong data-i18n="partner.options.whiteLabel.title">White-label</strong>
+            <p class="small" data-i18n="partner.options.whiteLabel.text">You sell the service under your brand. I build behind the scenes.</p>
+          </article>
+        </div>
+        <div class="partner-actions">
+          <a class="btn" href="#contact" data-i18n="partner.ctaPrimary">Discuss a partnership</a>
+          <a class="btn secondary" href="https://wa.me/212779043150" target="_blank" rel="noopener" data-i18n="partner.ctaSecondary">Send me a client page</a>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
@@ -168,9 +177,9 @@
           <input id="email" name="email" type="email" required class="input"
                  data-i18n-attr="placeholder:contact.formPHEmail|aria-label:contact.formPHEmail" placeholder="Your email" />
           <textarea id="message" name="message" required class="input textarea"
-                 data-i18n-attr="placeholder:contact.formPHMsg|aria-label:contact.formPHMsg" placeholder="What do you want to build?"></textarea>
+                 data-i18n-attr="placeholder:contact.formPHMsg|aria-label:contact.formPHMsg" placeholder="What do you want to build or discuss as a partnership?"></textarea>
           <button class="btn" id="form-button" data-i18n="contact.quickSend">Send project request</button>
-          <p class="small" data-i18n="contact.formNote">Tell me what you want to build. I’ll reply with a simple next step.</p>
+          <p class="small" data-i18n="contact.formNote">Tell me what you want to build or how you want to partner. I’ll reply with a simple next step.</p>
           <p id="form-status"></p>
         </form>
       </div>
