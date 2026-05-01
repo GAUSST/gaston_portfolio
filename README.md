@@ -15,6 +15,7 @@ This repository contains Gaoussou Diarra's personal developer portfolio. It pres
 - Hero / positioning
 - Services
 - Packages
+- Monthly Technical Support
 - Partners
 - Projects
 - Skills

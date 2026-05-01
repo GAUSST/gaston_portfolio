@@ -7,6 +7,7 @@ export const I18N = {
     nav: {
       services: "Services",
       packages: "Packages",
+      support: "Support",
       partners: "Partners",
       projects: "Projects",
       contact: "Contact",
@@ -71,7 +72,7 @@ export const I18N = {
     packages: {
       title: "Simple Packages",
       cta: "Start a project",
-      note: "Partner and white-label pricing available for marketers, consultants, designers, and small agencies.",
+      note: "Partner, white-label, and recurring support pricing available for marketers, consultants, designers, and small agencies.",
       items: [
         {
           icon: "fa-solid fa-rocket",
@@ -117,6 +118,53 @@ export const I18N = {
         },
       ],
     },
+    support: {
+      title: "Monthly Technical Support",
+      intro: "After launch, I can help keep your website, dashboard, automation, or product running, updated, and improving month after month.",
+      note: "Useful for clients who need updates, fixes, monitoring, small improvements, and technical support without hiring a full-time developer.",
+      partnerNote: "For partners: support plans can be resold from $200 to $700+/month, creating recurring revenue after the initial project.",
+      items: [
+        {
+          icon: "fa-solid fa-shield-heart",
+          title: "Basic Care",
+          price: "From $150/month",
+          text: "For simple websites and landing pages that need light maintenance.",
+          includes: [
+            "Small content updates",
+            "Bug fixes",
+            "Contact/form checks",
+            "Basic security/plugin checks if relevant",
+            "1 hour support/month",
+          ],
+        },
+        {
+          icon: "fa-solid fa-chart-line",
+          title: "Growth Support",
+          price: "From $300/month",
+          text: "For businesses and marketers who need regular improvements after launch.",
+          includes: [
+            "Everything in Basic Care",
+            "Landing page tweaks",
+            "Analytics/conversion review",
+            "Small UX improvements",
+            "2-3 hours support/month",
+          ],
+        },
+        {
+          icon: "fa-solid fa-screwdriver-wrench",
+          title: "Product Support",
+          price: "From $500/month",
+          text: "For dashboards, MVPs, e-commerce systems, and automations that need ongoing technical support.",
+          includes: [
+            "Bug fixes",
+            "Small feature updates",
+            "Monitoring/API checks",
+            "Workflow improvements",
+            "Monthly improvement plan",
+          ],
+        },
+      ],
+    },
     partner: {
       title: "Partner With Me",
       subtitle: "For marketers, designers, consultants, and small agencies.",
@@ -137,6 +185,10 @@ export const I18N = {
         whiteLabel: {
           title: "White-label",
           text: "You sell the service under your brand. I build behind the scenes.",
+        },
+        recurringSupport: {
+          title: "Recurring Support",
+          text: "Keep a monthly margin when clients continue with technical support after launch.",
         },
       },
       ctaPrimary: "Discuss a partnership",
@@ -180,8 +232,8 @@ export const I18N = {
       copied: "Copied!",
       quickSend: "Send project request",
       formPHEmail: "Your email",
-      formPHMsg: "What do you want to build or discuss as a partnership?",
-      formNote: "Tell me what you want to build or how you want to partner. I’ll reply with a simple next step.",
+      formPHMsg: "What do you want to build, maintain, or discuss as a partnership?",
+      formNote: "Tell me what you want to build, maintain, or how you want to partner. I’ll reply with a simple next step.",
       success: "Thanks. Your project request was sent.",
       error: "There was a problem sending your request. Please try again.",
     },
@@ -201,6 +253,7 @@ export const I18N = {
     nav: {
       services: "Services",
       packages: "Offres",
+      support: "Support",
       partners: "Partenaires",
       projects: "Projets",
       contact: "Contact",
@@ -265,7 +318,7 @@ export const I18N = {
     packages: {
       title: "Offres simples",
       cta: "Démarrer un projet",
-      note: "Tarifs partenaires et marque blanche disponibles pour marketeurs, consultants, designers et petites agences.",
+      note: "Tarifs partenaires, marque blanche et support récurrent disponibles pour marketeurs, consultants, designers et petites agences.",
       items: [
         {
           icon: "fa-solid fa-rocket",
@@ -311,6 +364,53 @@ export const I18N = {
         },
       ],
     },
+    support: {
+      title: "Support technique mensuel",
+      intro: "Après le lancement, je peux vous aider à garder votre site, dashboard, automatisation ou produit fonctionnel, à jour et en amélioration chaque mois.",
+      note: "Utile pour les clients qui ont besoin de mises à jour, corrections, suivi, petites améliorations et support technique sans recruter un développeur à temps plein.",
+      partnerNote: "Pour les partenaires : les offres de support peuvent être revendues entre 200 $ et 700 $+/mois, afin de créer un revenu récurrent après le projet initial.",
+      items: [
+        {
+          icon: "fa-solid fa-shield-heart",
+          title: "Basic Care",
+          price: "À partir de 150 $/mois",
+          text: "Pour les sites simples et landing pages qui ont besoin d’une maintenance légère.",
+          includes: [
+            "Petites mises à jour de contenu",
+            "Corrections de bugs",
+            "Vérification des formulaires/contact",
+            "Vérifications sécurité/plugins si pertinent",
+            "1 heure de support/mois",
+          ],
+        },
+        {
+          icon: "fa-solid fa-chart-line",
+          title: "Growth Support",
+          price: "À partir de 300 $/mois",
+          text: "Pour les entreprises et marketeurs qui veulent améliorer régulièrement après le lancement.",
+          includes: [
+            "Tout ce qui est inclus dans Basic Care",
+            "Ajustements landing page",
+            "Revue analytics/conversion",
+            "Petites améliorations UX",
+            "2-3 heures de support/mois",
+          ],
+        },
+        {
+          icon: "fa-solid fa-screwdriver-wrench",
+          title: "Product Support",
+          price: "À partir de 500 $/mois",
+          text: "Pour les dashboards, MVP, systèmes e-commerce et automatisations qui nécessitent un suivi technique continu.",
+          includes: [
+            "Corrections de bugs",
+            "Petites évolutions fonctionnelles",
+            "Suivi/API checks",
+            "Améliorations de workflows",
+            "Plan d’amélioration mensuel",
+          ],
+        },
+      ],
+    },
     partner: {
       title: "Collaborer avec moi",
       subtitle: "Pour marketeurs, designers, consultants et petites agences.",
@@ -331,6 +431,10 @@ export const I18N = {
         whiteLabel: {
           title: "Marque blanche",
           text: "Vous vendez le service sous votre marque. Je construis en arrière-plan.",
+        },
+        recurringSupport: {
+          title: "Support récurrent",
+          text: "Gardez une marge mensuelle lorsque les clients continuent avec un support technique après le lancement.",
         },
       },
       ctaPrimary: "Discuter d’un partenariat",
@@ -374,8 +478,8 @@ export const I18N = {
       copied: "Copié !",
       quickSend: "Envoyer la demande",
       formPHEmail: "Votre email",
-      formPHMsg: "Que souhaitez-vous construire ou discuter comme partenariat ?",
-      formNote: "Expliquez ce que vous souhaitez construire ou comment vous souhaitez collaborer. Je répondrai avec une prochaine étape simple.",
+      formPHMsg: "Que souhaitez-vous construire, maintenir ou discuter comme partenariat ?",
+      formNote: "Expliquez ce que vous souhaitez construire, maintenir ou comment vous souhaitez collaborer. Je répondrai avec une prochaine étape simple.",
       success: "Merci. Votre demande de projet a bien été envoyée.",
       error: "Un problème est survenu lors de l’envoi. Veuillez réessayer.",
     },
@@ -463,9 +567,34 @@ function renderPackages() {
     .join("");
 }
 
+function renderSupport() {
+  const grid = document.getElementById("supportGrid");
+  if (!grid) return;
+  grid.innerHTML = (I18N[lang].support?.items || [])
+    .map(
+      (item) => `
+      <article class="card reveal support-card">
+        <div class="package-head">
+          <div class="card-icon" aria-hidden="true"><i class="${item.icon}"></i></div>
+          <div>
+            <h3>${item.title}</h3>
+            <p class="support-price">${item.price}</p>
+          </div>
+        </div>
+        <p>${item.text}</p>
+        <ul class="feature-list">
+          ${(item.includes || []).map((entry) => `<li>${entry}</li>`).join("")}
+        </ul>
+      </article>
+    `
+    )
+    .join("");
+}
+
 function renderStaticSections() {
   renderServices();
   renderPackages();
+  renderSupport();
   renderExperience();
   const obs = initReveal();
   document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));

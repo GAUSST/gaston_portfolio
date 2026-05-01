@@ -18,6 +18,7 @@
       <nav class="nav-links">
         <a href="#services" data-i18n="nav.services">Services</a>
         <a href="#packages" data-i18n="nav.packages">Packages</a>
+        <a href="#support" data-i18n="nav.support">Support</a>
         <a href="#partners" data-i18n="nav.partners">Partners</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -76,7 +77,15 @@
     <section class="section container" id="packages" aria-labelledby="packages-title">
       <h2 id="packages-title" data-i18n="packages.title">Simple Packages</h2>
       <div id="packagesGrid" class="grid package-grid"></div>
-      <p class="small package-note" data-i18n="packages.note">Partner and white-label pricing available for marketers, consultants, designers, and small agencies.</p>
+      <p class="small package-note" data-i18n="packages.note">Partner, white-label, and recurring support pricing available for marketers, consultants, designers, and small agencies.</p>
+    </section>
+
+    <section class="section container support-section" id="support" aria-labelledby="support-title">
+      <h2 id="support-title" data-i18n="support.title">Monthly Technical Support</h2>
+      <p class="small section-intro" data-i18n="support.intro">After launch, I can help keep your website, dashboard, automation, or product running, updated, and improving month after month.</p>
+      <p class="small" data-i18n="support.note">Useful for clients who need updates, fixes, monitoring, small improvements, and technical support without hiring a full-time developer.</p>
+      <div id="supportGrid" class="grid support-grid"></div>
+      <p class="support-note" data-i18n="support.partnerNote">For partners: support plans can be resold from $200 to $700+/month, creating recurring revenue after the initial project.</p>
     </section>
 
     <section class="section container partner-section" id="partners" aria-labelledby="partners-title">
@@ -93,7 +102,7 @@
           </div>
         </div>
         <p class="partner-highlight" data-i18n="partner.highlight">You bring the client. I make the digital product real.</p>
-        <div class="grid grid-3 partner-options">
+        <div class="grid partner-options">
           <article class="partner-option">
             <strong data-i18n="partner.options.referral.title">Referral</strong>
             <p class="small" data-i18n="partner.options.referral.text">Introduce a client and earn 10% if the project closes.</p>
@@ -105,6 +114,10 @@
           <article class="partner-option">
             <strong data-i18n="partner.options.whiteLabel.title">White-label</strong>
             <p class="small" data-i18n="partner.options.whiteLabel.text">You sell the service under your brand. I build behind the scenes.</p>
+          </article>
+          <article class="partner-option">
+            <strong data-i18n="partner.options.recurringSupport.title">Recurring Support</strong>
+            <p class="small" data-i18n="partner.options.recurringSupport.text">Keep a monthly margin when clients continue with technical support after launch.</p>
           </article>
         </div>
         <div class="partner-actions">
@@ -179,9 +192,9 @@
           <input id="email" name="email" type="email" required class="input"
                  data-i18n-attr="placeholder:contact.formPHEmail|aria-label:contact.formPHEmail" placeholder="Your email" />
           <textarea id="message" name="message" required class="input textarea"
-                 data-i18n-attr="placeholder:contact.formPHMsg|aria-label:contact.formPHMsg" placeholder="What do you want to build or discuss as a partnership?"></textarea>
+                 data-i18n-attr="placeholder:contact.formPHMsg|aria-label:contact.formPHMsg" placeholder="What do you want to build, maintain, or discuss as a partnership?"></textarea>
           <button class="btn" id="form-button" data-i18n="contact.quickSend">Send project request</button>
-          <p class="small" data-i18n="contact.formNote">Tell me what you want to build or how you want to partner. I’ll reply with a simple next step.</p>
+          <p class="small" data-i18n="contact.formNote">Tell me what you want to build, maintain, or how you want to partner. I’ll reply with a simple next step.</p>
           <p id="form-status"></p>
         </form>
       </div>
