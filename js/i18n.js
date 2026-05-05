@@ -43,6 +43,11 @@ export const I18N = {
           text: "Clean, mobile-friendly websites for businesses, NGOs, consultants, and founders who need credibility, visibility, and leads.",
         },
         {
+          icon: "fa-solid fa-window-maximize",
+          title: "Landing Pages",
+          text: "Focused landing pages for campaigns, offers, lead generation, and conversion goals, built to be clear, fast, and effective.",
+        },
+        {
           icon: "fa-solid fa-gauge-high",
           title: "MVPs & Dashboards",
           text: "Simple web applications, dashboards, and internal tools to test ideas, manage operations, or support a growing team.",
@@ -63,9 +68,14 @@ export const I18N = {
           text: "Automation systems that reduce manual work using AI, scripts, APIs, and simple dashboards.",
         },
         {
+          icon: "fa-solid fa-life-ring",
+          title: "Monthly Technical Support",
+          text: "Ongoing technical support after launch for updates, fixes, monitoring, small improvements, and reliable month-to-month maintenance.",
+        },
+        {
           icon: "fa-solid fa-images",
           title: "Product Image & Catalog Automation",
-          text: "Workflows to classify, clean, organize, and prepare product images and descriptions for e-commerce.",
+          text: "Workflows to classify, clean, organize, and prepare product images and descriptions for e-commerce, including draft publication flows to selling platforms.",
         },
       ],
     },
@@ -289,6 +299,11 @@ export const I18N = {
           text: "Des sites propres, modernes et adaptés au mobile pour les entreprises, ONG, consultants et fondateurs qui veulent gagner en crédibilité, visibilité et contacts.",
         },
         {
+          icon: "fa-solid fa-window-maximize",
+          title: "Landing pages",
+          text: "Des landing pages ciblées pour campagnes, offres, génération de leads et objectifs de conversion, pensées pour être claires, rapides et efficaces.",
+        },
+        {
           icon: "fa-solid fa-gauge-high",
           title: "MVP & dashboards",
           text: "Des applications web simples, dashboards et outils internes pour tester une idée, gérer des opérations ou accompagner une équipe en croissance.",
@@ -309,9 +324,14 @@ export const I18N = {
           text: "Des systèmes d’automatisation qui réduisent le travail manuel grâce à l’IA, aux scripts, aux APIs et à des dashboards simples.",
         },
         {
+          icon: "fa-solid fa-life-ring",
+          title: "Support technique mensuel",
+          text: "Un support technique continu après le lancement pour les mises à jour, corrections, vérifications, petites améliorations et une maintenance fiable chaque mois.",
+        },
+        {
           icon: "fa-solid fa-images",
           title: "Automatisation image produit & catalogue",
-          text: "Des workflows pour classer, nettoyer, organiser et préparer les images et descriptions produits pour l’e-commerce.",
+          text: "Des workflows pour classer, nettoyer, organiser et préparer les images et descriptions produits pour l’e-commerce, y compris des flux de publication en brouillon vers les plateformes de vente.",
         },
       ],
     },
