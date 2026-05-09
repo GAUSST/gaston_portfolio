@@ -138,7 +138,7 @@ export const PROJECTS = [
       "Value delivered: reusable media API, faster merchandising prep, and batch-ready image operations.",
     value_fr:
       "Valeur apportée : API média réutilisable, préparation merchandising accélérée et traitement image en lot.",
-    tags: ["Backend", "Python", "Flask", "TensorFlow", "OpenCV"],
+    tags: ["Backend", "Python", "Flask", "TensorFlow", "OpenCV", "ESRGAN"],
     image: "./assets/retouching.png",
   },
   {
