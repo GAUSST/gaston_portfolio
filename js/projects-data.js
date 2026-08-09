@@ -1,183 +1,128 @@
 // ===============================
-// Projects data
+// Selected projects
 // ===============================
 export const PROJECTS = [
   {
-    title: "GeoTrac Platform",
-    subtitle: "Lost & Found reporting — Mali",
-    subtitle_fr: "Signalement d’objets perdus — Mali",
+    title: "Kora",
+    subtitle: "Cross-border fintech platform",
+    subtitle_fr: "Plateforme fintech transfrontalière",
     description:
-      "A public-service web platform that helps people report, verify, and recover lost items faster through structured reporting, search, and owner contact flows.",
+      "A fintech product spanning a Flutter mobile app, Spring Boot backend, MySQL data architecture, React operations dashboard and Next.js public website. Work includes KYC, payment flows, notifications, operational monitoring and cross-border transaction infrastructure.",
     description_fr:
-      "Plateforme web d’utilité publique qui aide à signaler, vérifier et retrouver plus rapidement des objets perdus grâce à des parcours de déclaration, recherche et contact propriétaire.",
+      "Produit fintech couvrant une application Flutter, un backend Spring Boot, une architecture de données MySQL, un dashboard opérationnel React et un site public Next.js. Le travail inclut KYC, paiements, notifications, suivi opérationnel et infrastructure de transactions transfrontalières.",
     value:
-      "Value delivered: clearer reporting flows, faster item recovery, and a practical service for local communities.",
+      "Hands-on product ownership from mobile UX and backend APIs to payment integration, operations tooling, deployment and release preparation.",
     value_fr:
-      "Valeur apportée : parcours de signalement plus clairs, récupération plus rapide et service utile pour les communautés locales.",
+      "Prise en charge technique hands-on, de l’UX mobile et des APIs backend jusqu’aux paiements, outils opérationnels, déploiement et préparation des releases.",
     tags: [
       "Full-stack",
+      "Java",
       "SpringBoot",
+      "REST APIs",
       "MySQL",
-      "Html",
-      "Css",
-      "Sass",
-      "Bootstrap",
-      "JavaScript",
-      "Angular",
-      "Git",
-    ],
-    image: "./assets/geotrac.png",
-    link: "https://site.geotrac.io",
-  },
-  {
-    title: "Kora App",
-    subtitle: "Payments & money transfers — Africa to the world",
-    subtitle_fr: "Paiements & transferts — l’Afrique vers le monde",
-    description:
-      "A fintech mobile app designed to make payments, transfers, and cross-border money movement simpler for users across African markets.",
-    description_fr:
-      "Application mobile fintech conçue pour simplifier les paiements, transferts et transactions transfrontalières pour les utilisateurs sur les marchés africains.",
-    value:
-      "Value delivered: smoother mobile transaction flows, clearer fintech UX, and support for cross-border product delivery.",
-    value_fr:
-      "Valeur apportée : parcours transactionnels mobiles plus fluides, UX fintech plus claire et contribution à un produit transfrontalier.",
-    tags: [
-      "Full-stack",
-      "SpringBoot",
-      "MySQL",
-      "Mobile",
-      "Dart",
       "Flutter",
+      "Dart",
+      "React",
+      "Firebase",
+      "Docker",
+      "PayDunya",
+      "Google Cloud Storage",
       "Git",
     ],
     image: "./assets/kora.png",
+    link: "https://koraworld.io",
   },
   {
-    title: "GeoTrac Showcase Site",
-    subtitle: "Marketing site UX refresh",
-    subtitle_fr: "Refonte UX du site vitrine",
+    title: "Fidelity Market",
+    subtitle: "Multi-platform marketplace & operational product work",
+    subtitle_fr: "Marketplace multi-plateforme & opérations produit",
     description:
-      "A UX and visual refresh to clearly explain GeoTrac’s benefits, features and how it works, with better IA and mobile-first layout.",
+      "Marketplace work across Angular, Spring Boot and Flutter, including a major UX redesign, app-like mobile navigation, customer/seller/order workflows and a faster product-search experience using cached data, similarity matching and synonym mapping.",
     description_fr:
-      "Refonte UX/UI pour clarifier les bénéfices, fonctionnalités et le fonctionnement de GeoTrac, avec une IA d’information améliorée et un design mobile-first.",
-    tags: ["Front-end", "Html", "Css", "Bootstrap", "Git"],
-    image: "./assets/site-geotrac.png",
-    link: "https://geotrac.io",
-  },
-  {
-    id: "fidelity-showcase",
-    title: "Fidelity Showcase Site",
-    subtitle: "Modern UI improvements",
-    subtitle_fr: "Améliorations d’interface modernes",
-    description:
-      "A marketing website for Fidelity with a cleaner, more modern interface, consistent components, and improved performance.",
-    description_fr:
-      "Site marketing avec interface moderne et épurée, composants unifiés et meilleures performances.",
-    tags: ["Front-end", "Html", "Css", "Git"],
-    image: "./assets/fidelity-site.png",
-  },
-  {
-    title: "GeoPoint Mobile",
-    subtitle: "Field team management app",
-    subtitle_fr: "Application de gestion d’équipes terrain",
-    description:
-      "All-in-one management app for field teams: QR check-ins, tasks, and coordination to boost productivity.",
-    description_fr:
-      "Application tout-en-un pour les équipes terrain : pointages QR, tâches et coordination pour gagner en productivité.",
-    tags: ["Front-end", "Flutter", "Dart", "Git"],
-    image: "./assets/geopoint.png",
-  },
-  {
-    title: "Fidelity Web & Mobile",
-    subtitle: "Marketplace experiences",
-    subtitle_fr: "Expériences marketplace",
-    description:
-      "Marketplace platform connecting sellers and customers, with improved onboarding, product discovery, and ordering flows across web and mobile.",
-    description_fr:
-      "Plateforme marketplace reliant vendeurs et clients, avec onboarding, découverte produit et parcours de commande optimisés sur web et mobile.",
+      "Travail marketplace sur Angular, Spring Boot et Flutter : refonte UX importante, navigation mobile de type application, parcours client/vendeur/commande et recherche produit accélérée grâce aux données mises en cache, au matching par similarité et aux synonymes.",
     value:
-      "Value delivered: marketplace UX, seller/customer flows, and web/mobile product implementation.",
+      "Improved product discovery, navigation and operational usability across web and mobile while contributing to backend features and API integration.",
     value_fr:
-      "Valeur apportée : UX marketplace, parcours vendeur/client et implémentation produit web/mobile.",
+      "Amélioration de la découverte produit, de la navigation et de l’usage opérationnel sur web et mobile, avec contribution aux fonctionnalités backend et aux intégrations API.",
     tags: [
       "Full-stack",
-      "Sass",
-      "Html",
-      "Css",
-      "Bootstrap",
+      "Java",
       "SpringBoot",
+      "REST APIs",
       "MySQL",
-      "Dart",
       "Angular",
+      "TypeScript",
       "Flutter",
+      "Dart",
       "Git",
     ],
     image: "./assets/fidelity.png",
     link: "https://fidelity-market.com",
   },
   {
-    title: "Netflix Clone",
-    subtitle: "Movie browsing app",
-    subtitle_fr: "Application de navigation de films",
+    title: "AI Product Image & Publishing Pipeline",
+    subtitle: "Human-in-the-loop e-commerce automation",
+    subtitle_fr: "Automatisation e-commerce avec validation humaine",
     description:
-      "A Netflix-style single-page app made with ReactJS, using the TMDB API to pull in movie data and a Laravel backend. It has a responsive design, loads content dynamically, and lets you search for movies, showing the top five results based on your search.",
+      "An operational e-commerce workflow that ingests product images from Google Drive, groups variants, routes product categories with Gemini, generates catalog assets, performs image QA, records rejections and prepares approved folders as draft products for admin review.",
     description_fr:
-      "Application monopage de type Netflix faite avec ReactJS, utilisant l’API TMDB pour récupérer les données de films et un backend Laravel. Design responsive, chargement dynamique du contenu, et possibilité de rechercher des films, affichant les cinq meilleurs résultats selon votre recherche.",
-    tags: ["Full-stack", "Html", "Css", "TailwindCss", "Laravel", "MySQL"],
-    image: "./assets/netflix.png",
-  },
-  {
-    title: "Image Retouching API",
-    subtitle: "Background removal and replacement API",
-    subtitle_fr: "API de suppression et remplacement d’arrière-plan",
-    description:
-      "A reusable image processing API that removes or replaces backgrounds at scale so teams can prepare cleaner visuals faster for catalogs, listings, and marketing assets.",
-    description_fr:
-      "API de traitement d’image réutilisable qui supprime ou remplace les arrière-plans à grande échelle afin d’aider les équipes à préparer plus vite des visuels propres pour catalogues, fiches produit et contenus marketing.",
+      "Workflow e-commerce opérationnel qui récupère les images depuis Google Drive, regroupe les variantes, route les catégories avec Gemini, génère des visuels catalogue, effectue des contrôles qualité, enregistre les rejets et prépare des produits brouillons pour validation admin.",
     value:
-      "Value delivered: reusable media API, faster merchandising prep, and batch-ready image operations.",
+      "Automation with control: scheduled processing, QA, rejection reasons, traceability and human approval before publication.",
     value_fr:
-      "Valeur apportée : API média réutilisable, préparation merchandising accélérée et traitement image en lot.",
-    tags: ["Backend", "Python", "Flask", "TensorFlow", "OpenCV", "ESRGAN"],
-    image: "./assets/retouching.png",
-  },
-  {
-    title: "AI Product Image Pipeline",
-    subtitle: "Automated product image and catalog workflow",
-    subtitle_fr: "Workflow automatisé d’images produits et catalogue",
-    description:
-      "An AI-powered image pipeline for e-commerce teams. It processes product photos from Google Drive, classifies items, groups variants, checks image quality, and prepares clean hero images, lifestyle use-cases, and catalog-ready outputs.",
-    description_fr:
-      "Pipeline d’images piloté par l’IA pour les équipes e-commerce. Il traite les photos produits depuis Google Drive, classifie les articles, regroupe les variantes, contrôle la qualité et prépare des visuels hero, lifestyle et des sorties prêtes pour catalogue.",
-    value:
-      "Value delivered: reduced manual image prep, automated catalog QA, variant handling, scheduled batch processing, and faster product publishing.",
-    value_fr:
-      "Valeur apportée : réduction du travail manuel, contrôle qualité catalogue automatisé, gestion des variantes, traitement en lot planifié et mise en ligne produit plus rapide.",
-    tags: ["Backend", "Python", "FastAPI", "Google Drive API", "Gemini API", "Pillow"],
+      "Automatisation avec contrôle : traitements planifiés, QA, motifs de rejet, traçabilité et validation humaine avant publication.",
+    tags: [
+      "Backend",
+      "Python",
+      "FastAPI",
+      "Google Drive API",
+      "Gemini API",
+      "Pillow",
+      "Automation",
+      "Git",
+    ],
     image: "./assets/image-pipeline.png",
   },
   {
-    title: "Shop Management/Inventory Page",
-    subtitle: "Store admin & customer flows",
-    subtitle_fr: "Gestion boutique & parcours clients",
+    title: "GeoTrac Platform",
+    subtitle: "Lost-item reporting and owner matching",
+    subtitle_fr: "Signalement d’objets perdus et matching propriétaire",
     description:
-      "A shop operations web app combining catalog management, inventory visibility, orders, and customer purchase flows in one interface for day-to-day retail operations.",
+      "A web platform for structured lost-item reporting, search and owner matching. Built across Angular, Spring Boot and MySQL with a focus on clear user flows and responsive access.",
     description_fr:
-      "Application web de gestion boutique réunissant catalogue, visibilité stock, commandes et parcours d’achat client dans une seule interface pour les opérations quotidiennes.",
+      "Plateforme web de signalement structuré d’objets perdus, recherche et matching propriétaire, construite avec Angular, Spring Boot et MySQL, avec des parcours utilisateurs clairs et responsives.",
     value:
-      "Value delivered: simpler store operations, better order visibility, and smoother customer purchasing flows.",
+      "End-to-end full-stack delivery across UI, APIs, database structure and search/matching workflows.",
     value_fr:
-      "Valeur apportée : opérations boutique simplifiées, meilleure visibilité sur les commandes et parcours d’achat plus fluide.",
-    tags: [
-      "Full-stack",
-      "Html",
-      "Css",
-      "Bootstrap",
-      "JavaScript",
-      "PHP",
-      "Laravel",
-      "MySQL",
-    ],
+      "Livraison full-stack de bout en bout : interface, APIs, structure de données et workflows de recherche/matching.",
+    tags: ["Full-stack", "Java", "SpringBoot", "REST APIs", "MySQL", "Angular", "JavaScript", "Git"],
+    image: "./assets/geotrac.png",
+    link: "https://site.geotrac.io",
+  },
+  {
+    title: "GeoPoint Mobile",
+    subtitle: "Field-team operations app",
+    subtitle_fr: "Application de gestion d’équipes terrain",
+    description:
+      "A Flutter application for field operations, including QR-based check-ins, task-oriented workflows and team coordination.",
+    description_fr:
+      "Application Flutter pour les opérations terrain, avec pointages QR, workflows orientés tâches et coordination d’équipe.",
+    tags: ["Mobile", "Flutter", "Dart", "Git"],
+    image: "./assets/geopoint.png",
+  },
+  {
+    title: "Shop Management / Ordering System",
+    subtitle: "Earlier PHP/Laravel commerce work",
+    subtitle_fr: "Projet e-commerce antérieur en PHP/Laravel",
+    description:
+      "An earlier commerce project covering catalog management, customer flows, ordering and store administration. Included PHP/Laravel and MySQL work and remains useful evidence of my earlier backend/web foundations.",
+    description_fr:
+      "Projet e-commerce antérieur couvrant catalogue, parcours client, commandes et administration boutique. Travail en PHP/Laravel et MySQL, utile comme preuve de mes bases backend/web plus anciennes.",
+    value:
+      "Supporting evidence rather than a current core stack: my strongest recent backend work is Java/Spring Boot.",
+    value_fr:
+      "Preuve complémentaire plutôt que stack principale actuelle : mon travail backend récent le plus solide est en Java/Spring Boot.",
+    tags: ["Full-stack", "PHP", "Laravel", "MySQL", "Git"],
     image: "./assets/shop.png",
   },
 ];
