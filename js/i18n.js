@@ -10,6 +10,9 @@ export const I18N = {
       skills: "Skills",
       contact: "Contact",
     },
+    actions: {
+      downloadCv: "Download CV",
+    },
     hero: {
       title: "Full-Stack Product Engineer building fintech, marketplace, mobile and automation systems.",
       ctaPrimary: "View engineering work",
@@ -90,6 +93,9 @@ export const I18N = {
       experience: "Expérience",
       skills: "Compétences",
       contact: "Contact",
+    },
+    actions: {
+      downloadCv: "Télécharger le CV",
     },
     hero: {
       title: "Ingénieur Full-Stack Produit, spécialisé dans les systèmes fintech, marketplace, mobile et automatisés.",
@@ -198,6 +204,26 @@ function renderStaticSections() {
   document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
 }
 
+function updateCvLink() {
+  const cvBtn = document.getElementById("cvDownload") || document.querySelector(".btn.cv");
+  if (!cvBtn) return;
+
+  const cvPath = lang === "fr"
+    ? "assets/Gaoussou_Diarra_Ingenieur_Produit_FullStack_CV.pdf"
+    : "assets/Gaoussou_Diarra_FullStack_Product_Engineer_CV.pdf";
+
+  cvBtn.href = cvPath;
+  cvBtn.hidden = true;
+
+  fetch(cvPath, { method: "HEAD", cache: "no-store" })
+    .then((response) => {
+      cvBtn.hidden = !response.ok;
+    })
+    .catch(() => {
+      cvBtn.hidden = true;
+    });
+}
+
 export function applyI18n(refreshListCallback) {
   document.documentElement.lang = lang;
   document.title = I18N[lang].meta.title;
@@ -243,6 +269,7 @@ export function applyI18n(refreshListCallback) {
   const emptyEl = document.getElementById("emptyState");
   if (emptyEl) emptyEl.textContent = I18N[lang].projects.empty;
 
+  updateCvLink();
   renderStaticSections();
   if (refreshListCallback) refreshListCallback();
 }
