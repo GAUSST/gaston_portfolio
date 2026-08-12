@@ -26,7 +26,7 @@ Operational human-in-the-loop e-commerce automation built with Python/FastAPI, G
 Earlier work includes GeoTrac, a lost-item reporting/search/owner-matching platform built with Angular, Spring Boot and MySQL, and client WordPress/PHP website work at Aplika.
 
 Professional positioning:
-Full-Stack Product Engineer focused on fintech, payments, marketplaces, mobile products, API integrations, operational systems and applied automation.
+Full-Stack Product Engineer building reliable products across backend, mobile and web. Strongest recent evidence includes fintech, payments, marketplaces, API integrations, operational systems and applied automation, but the positioning is not limited to those domains.
 
 English: Professional working proficiency. TOEFL iBT 80/120, CEFR B2, June 2026.
 
