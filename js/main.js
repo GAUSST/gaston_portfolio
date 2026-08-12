@@ -1,6 +1,14 @@
 import { initTheme } from "./theme.js";
 import { mountMenuToggle, initMobileUtils, initScrollSpy } from "./ui.js";
 
+// Keep the base stylesheet for backward compatibility and layer the V2 case-study system on top.
+if (!document.querySelector('link[href="v2.css"]')) {
+  const v2 = document.createElement("link");
+  v2.rel = "stylesheet";
+  v2.href = "v2.css";
+  document.head.appendChild(v2);
+}
+
 initTheme();
 mountMenuToggle();
 initMobileUtils();
@@ -57,18 +65,6 @@ document.getElementById("langToggle")?.addEventListener("click", () => {
 });
 
 applyLanguage();
-
-document.getElementById("copyEmail")?.addEventListener("click", async () => {
-  const btn = document.getElementById("copyEmail");
-  try {
-    await navigator.clipboard.writeText("gdiarrag@gmail.com");
-    if (btn) btn.textContent = translations[lang].copied;
-  } finally {
-    setTimeout(() => {
-      if (btn) btn.textContent = lang === "en" ? "Copy email" : "Copier l’email";
-    }, 1800);
-  }
-});
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
