@@ -1,0 +1,55 @@
+{
+  "name": "Gaoussou Diarra",
+  "title": "Full-Stack Product Engineer",
+  "location": "Casablanca, Morocco",
+  "positioning": "Full-stack product engineer focused on fintech, payments, marketplaces, mobile products, API integrations, operational systems and applied automation.",
+  "primary_skills": ["Java", "Spring Boot", "REST APIs", "MySQL", "Flutter", "Dart", "TypeScript", "Angular"],
+  "working_experience": ["React", "Python", "FastAPI", "Docker", "Firebase/FCM", "Google Cloud Storage"],
+  "additional_experience": ["PHP", "Laravel", "WordPress", "Next.js"],
+  "projects": [
+    {
+      "name": "Kora",
+      "type": "Cross-border fintech platform",
+      "role": "Co-founder & Founding Full-Stack Engineer",
+      "stack": ["Flutter", "Spring Boot", "MySQL", "React", "Next.js"],
+      "scope": ["KYC", "PayDunya payments", "FCM notifications", "SSE admin updates", "Google Cloud Storage", "transaction monitoring", "Solana/USDT integration contribution", "release preparation"],
+      "url": "https://koraworld.io"
+    },
+    {
+      "name": "Fidelity Market",
+      "type": "Multi-platform marketplace",
+      "role": "Web / Mobile Developer",
+      "stack": ["Angular", "Spring Boot", "Flutter", "MySQL"],
+      "scope": ["marketplace UX redesign", "mobile navigation", "backend features", "product discovery", "client-side similarity and synonym search", "AI-assisted e-commerce automation"],
+      "url": "https://fidelity-market.com"
+    },
+    {
+      "name": "AI Product Image & Publishing Pipeline",
+      "type": "Human-in-the-loop e-commerce automation",
+      "stack": ["Python", "FastAPI", "Gemini API", "Google Drive API", "Pillow"],
+      "scope": ["variant grouping", "category routing", "asset generation", "QA", "rejection tracking", "traceability", "human approval", "draft-product creation"]
+    },
+    {
+      "name": "GeoTrac Platform",
+      "type": "Lost-item reporting and owner matching",
+      "stack": ["Angular", "Spring Boot", "MySQL"]
+    }
+  ],
+  "education": {
+    "qualification": "Professional University Degree in Web Application Development and Mobile Technologies",
+    "institution": "École Supérieure de Technologie de Casablanca, Université Hassan II",
+    "obtained": "2026-07"
+  },
+  "languages": {
+    "Bambara": "Native",
+    "French": "Fluent",
+    "English": "Professional working proficiency",
+    "Arabic": "Intermediate"
+  },
+  "links": {
+    "portfolio": "https://gausst.github.io/gaston_portfolio/",
+    "resume_html": "https://gausst.github.io/gaston_portfolio/resume.html",
+    "github": "https://github.com/GAUSST",
+    "linkedin": "https://www.linkedin.com/in/gaoussou-diarra"
+  }
+}

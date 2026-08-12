@@ -1,70 +1,70 @@
 import { initTheme } from "./theme.js";
-import { I18N, initLanguage, lang } from "./i18n.js";
-import { mountMenuToggle, initMobileUtils, initScrollSpy, relocateNavUtilities } from "./ui.js";
-import { initProjects, refreshList } from "./projects.js";
+import { mountMenuToggle, initMobileUtils, initScrollSpy } from "./ui.js";
 
-/* =========================================================
-   Boot
-========================================================= */
+// Keep the base stylesheet for backward compatibility and layer the V2 case-study system on top.
+if (!document.querySelector('link[href="v2.css"]')) {
+  const v2 = document.createElement("link");
+  v2.rel = "stylesheet";
+  v2.href = "v2.css";
+  document.head.appendChild(v2);
+}
+
 initTheme();
 mountMenuToggle();
 initMobileUtils();
 initScrollSpy();
 
-// Initialize Language with callbacks for refreshing projects and relocating utilities
-initLanguage(
-    () => refreshList(), // Refresh projects when language changes
-    () => relocateNavUtilities() // Relocate utilities when language changes (if needed)
-);
+const LANG_KEY = "gd_lang";
+let lang = localStorage.getItem(LANG_KEY) || (navigator.language?.startsWith("fr") ? "fr" : "en");
 
-initProjects();
+const translations = {
+  en: {
+    title: "Gaoussou Diarra — Full-Stack Product Engineer",
+    description: "Gaoussou Diarra is a full-stack product engineer focused on Java/Spring Boot, Flutter, TypeScript, fintech, marketplaces, payments, KYC, APIs and applied AI automation.",
+    cv: "assets/Gaoussou_Diarra_FullStack_Product_Engineer_CV.pdf",
+    copied: "Copied!",
+  },
+  fr: {
+    title: "Gaoussou Diarra — Ingénieur Produit Full-Stack",
+    description: "Gaoussou Diarra est ingénieur produit full-stack, avec une expérience en Java/Spring Boot, Flutter, TypeScript, fintech, marketplaces, paiements, KYC, APIs et automatisation IA appliquée.",
+    cv: "assets/Gaoussou_Diarra_Ingenieur_Produit_FullStack_CV.pdf",
+    copied: "Copié !",
+  },
+};
 
-/* =========================================================
-   Contact
-========================================================= */
-document.getElementById("copyEmail")?.addEventListener("click", async () => {
-  const btn = document.getElementById("copyEmail");
+function applyLanguage() {
+  document.documentElement.lang = lang;
+  document.title = translations[lang].title;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", translations[lang].description);
 
-  try {
-    await navigator.clipboard.writeText("gdiarrag@gmail.com");
-    btn.textContent = I18N[lang].contact.copied;
-    setTimeout(() => {
-      btn.textContent = I18N[lang].contact.copyEmail;
-    }, 1800);
-  } catch {
-    btn.textContent = I18N[lang].contact.copyEmail;
+  document.querySelectorAll("[data-en][data-fr]").forEach((el) => {
+    el.textContent = el.dataset[lang];
+  });
+
+  const toggle = document.getElementById("langToggle");
+  if (toggle) {
+    toggle.textContent = lang === "en" ? "FR" : "EN";
+    toggle.setAttribute("aria-label", lang === "en" ? "Switch to French" : "Passer en anglais");
   }
+
+  const cv = document.getElementById("cvDownload");
+  if (cv) {
+    const href = translations[lang].cv;
+    cv.href = href;
+    cv.hidden = true;
+    fetch(href, { method: "HEAD", cache: "no-store" })
+      .then((res) => { cv.hidden = !res.ok; })
+      .catch(() => { cv.hidden = true; });
+  }
+}
+
+document.getElementById("langToggle")?.addEventListener("click", () => {
+  lang = lang === "en" ? "fr" : "en";
+  localStorage.setItem(LANG_KEY, lang);
+  applyLanguage();
 });
 
-const form = document.getElementById("form");
-form?.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const status = document.getElementById("form-status");
-  const submitBtn = document.getElementById("form-button");
-  const data = new FormData(form);
+applyLanguage();
 
-  if (submitBtn) submitBtn.disabled = true;
-  if (status) status.textContent = "";
-
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { Accept: "application/json" },
-    });
-
-    if (!response.ok) {
-      throw new Error("Form submission failed");
-    }
-
-    if (status) status.textContent = I18N[lang].contact.success;
-    form.reset();
-  } catch {
-    if (status) status.textContent = I18N[lang].contact.error;
-  } finally {
-    if (submitBtn) submitBtn.disabled = false;
-  }
-});
-
-// Year
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
