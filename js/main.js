@@ -26,13 +26,13 @@ let lang = localStorage.getItem(LANG_KEY) || (navigator.language?.startsWith("fr
 const translations = {
   en: {
     title: "Gaoussou Diarra — Full-Stack Product Engineer",
-    description: "Gaoussou Diarra is a full-stack product engineer focused on Java/Spring Boot, Flutter, TypeScript, fintech, marketplaces, payments, KYC, APIs and applied AI automation.",
+    description: "Gaoussou Diarra is a full-stack product engineer building reliable backend, mobile and web products with Java/Spring Boot, Flutter and TypeScript, with experience in fintech, marketplaces and applied automation.",
     cv: "assets/Gaoussou_Diarra_FullStack_Product_Engineer_CV.pdf",
     copied: "Copied!",
   },
   fr: {
     title: "Gaoussou Diarra — Ingénieur Produit Full-Stack",
-    description: "Gaoussou Diarra est ingénieur produit full-stack, avec une expérience en Java/Spring Boot, Flutter, TypeScript, fintech, marketplaces, paiements, KYC, APIs et automatisation IA appliquée.",
+    description: "Gaoussou Diarra est ingénieur produit full-stack et construit des produits fiables sur le backend, le mobile et le web avec Java/Spring Boot, Flutter et TypeScript, avec une expérience en fintech, marketplaces et automatisation appliquée.",
     cv: "assets/Gaoussou_Diarra_Ingenieur_Produit_FullStack_CV.pdf",
     copied: "Copié !",
   },
