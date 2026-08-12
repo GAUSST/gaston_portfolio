@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gausst.github.io/gaston_portfolio/sitemap.xml
