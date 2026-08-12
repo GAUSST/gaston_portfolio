@@ -84,6 +84,36 @@ if (geoTracCard) {
   }
 }
 
+// Make the experience chronology explicit so the recent degree is not read as
+// the beginning of the engineering journey.
+const experienceHeading = document.querySelector("#experience .section-heading");
+if (experienceHeading && !experienceHeading.querySelector(".experience-context")) {
+  const context = document.createElement("p");
+  context.className = "experience-context";
+  context.dataset.en = "Building software professionally and independently since 2022.";
+  context.dataset.fr = "Je développe des logiciels professionnellement et de manière indépendante depuis 2022.";
+  context.textContent = context.dataset.en;
+  experienceHeading.appendChild(context);
+}
+
+// Keep education visible as a supporting credential rather than the dominant
+// signal. The exact month remains available in the CV; the portfolio only needs
+// the year.
+const educationCard = document.querySelector(".credentials-section .credential-card:first-child");
+if (educationCard) {
+  const educationTitle = educationCard.querySelector("h3");
+  if (educationTitle) {
+    educationTitle.dataset.en = "Professional University Degree · Web Application Development & Mobile Technologies";
+    educationTitle.dataset.fr = "Licence Professionnelle · Développement des Applications Web et Technologies Mobiles";
+    educationTitle.textContent = educationTitle.dataset.en;
+  }
+
+  const educationMeta = educationCard.querySelector(":scope > p:last-child");
+  if (educationMeta) {
+    educationMeta.textContent = "École Supérieure de Technologie de Casablanca, Université Hassan II · 2026";
+  }
+}
+
 // Broaden availability so the portfolio does not imply remote-only interest.
 const contactHeading = document.querySelector("#contact h2");
 if (contactHeading) {
@@ -99,8 +129,6 @@ if (contactIntro) {
 }
 
 // Keep the current verified TOEFL credential concise on the public portfolio.
-// The official June 2026 report is CEFR B2; the numeric score is intentionally
-// omitted here rather than replaced with an unverified higher number.
 const toeflLine = document.querySelector(".credentials-section .credential-card:last-child > p:last-child");
 if (toeflLine) {
   toeflLine.dataset.en = "TOEFL iBT · CEFR B2 · June 2026";
