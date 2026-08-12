@@ -1,33 +1,83 @@
 /* Focused V3 layout refinements after live review */
 
+/*
+  The three source visuals have different aspect ratios. A single `cover` rule
+  inevitably crops important content from at least one of them. Instead of
+  plain letterboxing, each project now uses a layered image stage: the full
+  artwork is preserved in the foreground while a softened full-bleed copy of
+  the same artwork fills the surrounding space.
+*/
+
+#kora .visual-frame { --project-art: url("assets/kora.png"); }
+#fidelity .visual-frame { --project-art: url("assets/fidelity-site.png"); }
+#ai-pipeline .visual-frame { --project-art: url("assets/image-pipeline.png"); }
+
+.visual-frame {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #0d1017;
+}
+
+.visual-frame::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: -10%;
+  background-image: var(--project-art);
+  background-size: cover;
+  background-position: center;
+  filter: blur(28px) saturate(.9) brightness(.55);
+  transform: scale(1.12);
+  opacity: .88;
+}
+
+.visual-frame::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(145deg, rgba(7, 10, 17, .14), rgba(7, 10, 17, .38)),
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,.06), transparent 68%);
+  pointer-events: none;
+}
+
+#kora .visual-frame img,
+#fidelity .visual-frame img,
+#ai-pipeline .visual-frame img {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  box-shadow: 0 22px 55px rgba(0,0,0,.34);
+}
+
 @media (min-width: 1000px) {
-  /* Give project visuals a wider, more cinematic frame while keeping cover crop. */
+  /* Restore a healthier balance now that the image no longer needs an oversized
+     column just to fight cropping. */
   .project-case {
-    grid-template-columns: minmax(0, 1.28fr) minmax(390px, .72fr);
-    min-height: 500px;
+    grid-template-columns: minmax(0, 1.08fr) minmax(420px, .92fr);
+    min-height: 525px;
   }
 
   .visual-frame {
-    min-height: 455px;
+    min-height: 485px;
   }
 
   .project-copy {
-    padding: clamp(1.8rem, 3vw, 2.8rem);
-  }
-
-  /* The source images are landscape-heavy. A slightly wider visual column shows
-     materially more of each image without the letterboxing caused by contain. */
-  #kora .visual-frame img,
-  #fidelity .visual-frame img,
-  #ai-pipeline .visual-frame img {
-    object-fit: cover;
-    object-position: center;
+    padding: clamp(2rem, 3.4vw, 3.25rem);
   }
 }
 
 @media (min-width: 1280px) {
   .project-case {
-    grid-template-columns: minmax(0, 1.34fr) minmax(390px, .66fr);
+    grid-template-columns: minmax(0, 1.12fr) minmax(420px, .88fr);
   }
 }
 
@@ -43,5 +93,13 @@
 
   .visual-frame {
     min-height: 390px;
+  }
+
+  #kora .visual-frame img,
+  #fidelity .visual-frame img,
+  #ai-pipeline .visual-frame img {
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    border-radius: 13px;
   }
 }
