@@ -14,6 +14,12 @@ if (!document.querySelector('link[href="v3-fixes.css"]')) {
   v3Fixes.href = "v3-fixes.css";
   document.head.appendChild(v3Fixes);
 }
+if (!document.querySelector('link[href="v3-top-media.css"]')) {
+  const topMedia = document.createElement("link");
+  topMedia.rel = "stylesheet";
+  topMedia.href = "v3-top-media.css";
+  document.head.appendChild(topMedia);
+}
 
 initTheme();
 mountMenuToggle();
@@ -56,6 +62,26 @@ if (fidelityTopline && fidelitySiteLink) {
   appLink.dataset.fr = "Ouvrir l’app ↗";
   appLink.textContent = "Open app ↗";
   links.appendChild(appLink);
+}
+
+// Add the live GeoTrac product link to the earlier-work card.
+const geoTracCard = [...document.querySelectorAll(".earlier-card")]
+  .find((card) => card.querySelector("h3")?.textContent.trim() === "GeoTrac Platform");
+if (geoTracCard) {
+  const heading = geoTracCard.querySelector("h3");
+  if (heading && !geoTracCard.querySelector('a[href^="https://site.geotrac.io"]')) {
+    const link = document.createElement("a");
+    link.href = "https://site.geotrac.io/#/authentication/login";
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.className = "text-link";
+    link.dataset.en = "Open platform ↗";
+    link.dataset.fr = "Ouvrir la plateforme ↗";
+    link.textContent = "Open platform ↗";
+    link.style.display = "inline-block";
+    link.style.marginTop = ".65rem";
+    heading.insertAdjacentElement("afterend", link);
+  }
 }
 
 // Broaden availability so the portfolio does not imply remote-only interest.
