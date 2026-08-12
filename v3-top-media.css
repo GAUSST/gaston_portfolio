@@ -1,1 +1,102 @@
-/* placeholder */
+/* Portfolio flagship cards: full-width visual first, content below. */
+
+/*
+  Live review showed that side-by-side media forces incompatible crops across
+  the Kora, Fidelity and AI assets. The fix is structural rather than another
+  object-fit compromise: each project gets a full-width visual stage, then the
+  engineering story below it.
+*/
+
+.project-case,
+.project-case.project-case-reverse {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.project-case-reverse .project-visual {
+  order: 0;
+}
+
+.project-visual {
+  width: 100%;
+  padding: 0;
+  background: #0d1017;
+}
+
+.visual-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Remove the previous blurred/contain staging. */
+.visual-frame::before,
+.visual-frame::after {
+  content: none !important;
+  display: none !important;
+}
+
+#kora .visual-frame img,
+#fidelity .visual-frame img,
+#ai-pipeline .visual-frame img,
+.visual-frame img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: initial;
+  object-position: initial;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.project-case:hover .visual-frame img {
+  transform: none;
+}
+
+.project-copy {
+  width: 100%;
+  max-width: none;
+  padding: clamp(2rem, 4vw, 3.6rem);
+}
+
+/* Full-width copy lets the technical story read like a case study rather than
+   a cramped sidebar. Keep prose to a comfortable line length. */
+.project-copy > .project-summary,
+.project-copy > .decision-card {
+  max-width: 920px;
+}
+
+.project-points {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.project-footerline {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .project-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .project-copy {
+    padding: 1.45rem;
+  }
+
+  .project-points {
+    grid-template-columns: 1fr;
+  }
+}
