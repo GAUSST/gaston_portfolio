@@ -1,0 +1,316 @@
+/* Portfolio V2: static-first, case-study-led presentation */
+:root {
+  --max-reading: 860px;
+}
+
+.hero {
+  padding: 5rem 0 2.75rem;
+}
+
+.hero-shell {
+  max-width: 1050px;
+  padding: 0;
+}
+
+.eyebrow,
+.case-kicker {
+  margin: 0 0 .65rem;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--text) 62%, var(--brand-2) 38%);
+}
+
+.hero-title {
+  max-width: 1000px;
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5.25rem);
+  line-height: .98;
+  letter-spacing: -.05em;
+  text-wrap: balance;
+}
+
+.hero-lead {
+  max-width: 900px;
+  margin: 1.4rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.7;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1.5rem;
+}
+
+.hero-meta span,
+.stack-line {
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 650;
+}
+
+.hero-meta span {
+  padding: .45rem .7rem;
+  border: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--panel) 88%, var(--brand) 12%);
+}
+
+.section-title {
+  max-width: 900px;
+  margin: 0 0 .9rem;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.section-intro {
+  max-width: var(--max-reading);
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.case-study {
+  margin-top: 1.35rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid color-mix(in oklab, var(--text) 9%, transparent);
+  border-radius: 24px;
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--panel) 94%, var(--brand) 6%),
+    var(--panel));
+  box-shadow: 0 18px 50px rgba(0,0,0,.16);
+}
+
+.case-study.flagship {
+  padding: clamp(1.4rem, 3.4vw, 2.4rem);
+}
+
+.case-study h3 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  letter-spacing: -.03em;
+}
+
+.case-study h4 {
+  margin: 0 0 .65rem;
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .055em;
+  color: var(--muted);
+}
+
+.case-study p,
+.case-study li {
+  line-height: 1.67;
+}
+
+.case-subtitle {
+  margin: .25rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.case-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.35fr);
+  gap: clamp(1.2rem, 3vw, 2.5rem);
+  padding-top: 1.35rem;
+}
+
+.case-summary,
+.case-details {
+  min-width: 0;
+}
+
+.case-details ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.case-details li + li {
+  margin-top: .7rem;
+}
+
+.stack-line {
+  margin-top: 1rem;
+  padding-top: .9rem;
+  border-top: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+}
+
+.case-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  margin-top: 1.3rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: color-mix(in oklab, var(--panel-2) 82%, var(--brand-2) 18%);
+  border: 1px solid color-mix(in oklab, var(--brand-2) 22%, var(--text) 7%);
+}
+
+.case-status span {
+  color: var(--muted);
+}
+
+.pipeline {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1.2rem;
+  padding: .9rem;
+  border-radius: 14px;
+  background: var(--panel-2);
+  border: 1px solid color-mix(in oklab, var(--text) 8%, transparent);
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.pipeline span:nth-child(odd) {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.earlier-work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.earlier-work h3 {
+  margin: 0 0 .65rem;
+}
+
+.timeline-static {
+  border-top: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: minmax(200px, .75fr) minmax(0, 1.6fr);
+  gap: 1.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+}
+
+.timeline-item h3 {
+  margin: 0 0 .45rem;
+  font-size: 1.12rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.timeline-meta {
+  display: grid;
+  align-content: start;
+  gap: .35rem;
+}
+
+.timeline-meta span {
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.stack-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 1rem;
+  border-top: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  border-left: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+}
+
+.stack-group {
+  min-height: 120px;
+  padding: 1.15rem;
+  border-right: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  border-bottom: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+}
+
+.stack-group h3 {
+  margin: 0 0 .55rem;
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+
+.stack-group p {
+  margin: 0;
+  line-height: 1.65;
+  font-weight: 650;
+}
+
+.stack-note {
+  margin-top: 1rem;
+  max-width: 850px;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 2rem;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border-radius: 24px;
+  background: color-mix(in oklab, var(--panel) 88%, var(--brand) 12%);
+  border: 1px solid color-mix(in oklab, var(--text) 9%, transparent);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .65rem;
+}
+
+.contact-links .btn {
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .hero { padding-top: 3.1rem; }
+  .hero-title { font-size: clamp(2.35rem, 11vw, 4rem); }
+  .case-head,
+  .case-grid,
+  .timeline-item,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+  .case-head { display: grid; }
+  .earlier-work,
+  .stack-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-inner { gap: .5rem; }
+  .brand .chip { display: none; }
+  .actions { gap: .3rem; }
+  .actions .btn.cv { display: none; }
+  .case-study { border-radius: 18px; }
+}
