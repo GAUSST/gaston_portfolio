@@ -35,7 +35,8 @@
     {
       "name": "GeoTrac Platform",
       "type": "Lost-item reporting and owner matching",
-      "stack": ["Angular", "Spring Boot", "MySQL"]
+      "stack": ["Angular", "Spring Boot", "MySQL"],
+      "url": "https://site.geotrac.io/#/authentication/login"
     }
   ],
   "education": {
