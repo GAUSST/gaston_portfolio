@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gaoussou Diarra — Full-Stack Product Engineer</title>
-  <meta name="description" content="Gaoussou Diarra is a full-stack product engineer building reliable backend, mobile and web products with Java/Spring Boot, Flutter and TypeScript, with experience in fintech, marketplaces and applied automation." />
+  <title>Gaoussou Diarra - Full-Stack Product Engineer</title>
+  <meta name="description" content="Gaoussou Diarra is a full-stack product engineer building reliable backend, mobile and web products with Java/Spring Boot, Flutter and TypeScript." />
   <meta name="author" content="Gaoussou Diarra" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://gausst.github.io/gaston_portfolio/" />
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Gaoussou Diarra — Full-Stack Product Engineer" />
+  <meta property="og:title" content="Gaoussou Diarra - Full-Stack Product Engineer" />
   <meta property="og:description" content="Reliable backend, mobile and web products across Java/Spring Boot, Flutter and TypeScript." />
   <meta property="og:url" content="https://gausst.github.io/gaston_portfolio/" />
   <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="v2.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
   <script type="application/ld+json">
   {
@@ -45,7 +49,7 @@
 <body>
   <header class="nav" role="navigation" aria-label="Primary">
     <div class="container nav-inner">
-      <a class="brand" href="#about">Gaoussou&nbsp;Diarra <span class="chip">Engineer</span></a>
+      <a class="brand" href="#about">Gaoussou Diarra <span class="chip">Engineer</span></a>
       <nav class="nav-links">
         <a href="#work" data-en="Work" data-fr="Réalisations">Work</a>
         <a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a>
@@ -66,194 +70,228 @@
 
   <main>
     <section class="hero container" id="about">
-      <div class="hero-shell reveal">
-        <p class="eyebrow" data-en="FULL-STACK PRODUCT ENGINEER" data-fr="INGÉNIEUR PRODUIT FULL-STACK">FULL-STACK PRODUCT ENGINEER</p>
-        <h1 class="hero-title" data-en="I build reliable software products across backend, mobile and web." data-fr="Je construis des produits logiciels fiables sur le backend, le mobile et le web.">I build reliable software products across backend, mobile and web.</h1>
-        <p class="hero-lead" data-en="Hands-on across Java/Spring Boot backends, Flutter mobile apps, TypeScript frontends and API integrations. Recent work includes fintech, marketplaces, payments, KYC, operational tools and AI-assisted workflows." data-fr="Travail hands-on sur des backends Java/Spring Boot, des applications Flutter, des frontends TypeScript et des intégrations API. Mes travaux récents couvrent la fintech, les marketplaces, les paiements, le KYC, les outils opérationnels et les workflows assistés par IA.">Hands-on across Java/Spring Boot backends, Flutter mobile apps, TypeScript frontends and API integrations. Recent work includes fintech, marketplaces, payments, KYC, operational tools and AI-assisted workflows.</p>
-        <div class="hero-meta">
-          <span>Java / Spring Boot</span><span>Flutter</span><span>TypeScript</span><span>Casablanca, Morocco</span>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-en="FULL-STACK PRODUCT ENGINEER" data-fr="INGÉNIEUR PRODUIT FULL-STACK">FULL-STACK PRODUCT ENGINEER</p>
+          <h1 class="hero-title" data-en="I build reliable software products across backend, mobile and web." data-fr="Je construis des produits logiciels fiables sur le backend, le mobile et le web.">I build reliable software products across backend, mobile and web.</h1>
+          <p class="hero-lead" data-en="Hands-on across Java/Spring Boot backends, Flutter mobile apps, TypeScript frontends and API integrations. Recent work includes fintech, marketplaces, payments, KYC, operational tools and AI-assisted workflows." data-fr="Travail hands-on sur des backends Java/Spring Boot, des applications Flutter, des frontends TypeScript et des intégrations API. Mes travaux récents couvrent la fintech, les marketplaces, les paiements, le KYC, les outils opérationnels et les workflows assistés par IA.">Hands-on across Java/Spring Boot backends, Flutter mobile apps, TypeScript frontends and API integrations. Recent work includes fintech, marketplaces, payments, KYC, operational tools and AI-assisted workflows.</p>
+          <div class="hero-meta">
+            <span>Java / Spring Boot</span>
+            <span>Flutter</span>
+            <span>TypeScript</span>
+            <span>Casablanca, Morocco</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="#work" data-en="View selected work" data-fr="Voir mes réalisations">View selected work</a>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a class="btn" href="#work" data-en="View selected work" data-fr="Voir mes réalisations">View selected work</a>
-          <a class="btn secondary" href="resume.html" data-en="HTML résumé" data-fr="CV HTML">HTML résumé</a>
-          <a class="btn secondary" href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+
+        <div class="hero-showcase reveal" aria-label="Selected product previews">
+          <div class="hero-shot hero-shot-main">
+            <img src="assets/kora.png" alt="Kora fintech mobile product preview" />
+            <span>Kora</span>
+          </div>
+          <div class="hero-shot hero-shot-small hero-shot-fidelity">
+            <img src="assets/fidelity-site.png" alt="Fidelity marketplace preview" />
+            <span>Fidelity</span>
+          </div>
+          <div class="hero-shot hero-shot-small hero-shot-ai">
+            <img src="assets/image-pipeline.png" alt="AI publishing pipeline preview" />
+            <span>AI workflow</span>
+          </div>
         </div>
+      </div>
+
+      <div class="proof-rail reveal" aria-label="Engineering scope">
+        <span data-en="Backend systems" data-fr="Systèmes backend">Backend systems</span>
+        <span data-en="Mobile products" data-fr="Produits mobiles">Mobile products</span>
+        <span data-en="Web applications" data-fr="Applications web">Web applications</span>
+        <span data-en="APIs & integrations" data-fr="APIs & intégrations">APIs & integrations</span>
+        <span data-en="Applied automation" data-fr="Automatisation appliquée">Applied automation</span>
       </div>
     </section>
 
     <section class="section container" id="work" aria-labelledby="work-title">
-      <p class="eyebrow" data-en="SELECTED ENGINEERING WORK" data-fr="RÉALISATIONS TECHNIQUES SÉLECTIONNÉES">SELECTED ENGINEERING WORK</p>
-      <h2 id="work-title" class="section-title" data-en="Systems I have built and owned across the stack" data-fr="Systèmes que j’ai construits et pris en charge à travers la stack">Systems I have built and owned across the stack</h2>
-      <p class="section-intro" data-en="The focus here is ownership, engineering decisions and operational scope, not a gallery of framework logos." data-fr="L’accent est mis sur la prise en charge, les décisions d’ingénierie et la portée opérationnelle, plutôt que sur une galerie de technologies.">The focus here is ownership, engineering decisions and operational scope, not a gallery of framework logos.</p>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-en="SELECTED ENGINEERING WORK" data-fr="RÉALISATIONS TECHNIQUES SÉLECTIONNÉES">SELECTED ENGINEERING WORK</p>
+        <h2 id="work-title" class="section-title" data-en="Three systems that show how I work" data-fr="Trois systèmes qui montrent ma façon de travailler">Three systems that show how I work</h2>
+        <p class="section-intro" data-en="The focus is not the number of frameworks. It is what I owned, the engineering decisions behind the product, and how the system supports real operations." data-fr="L’objectif n’est pas le nombre de frameworks. Je montre ce que j’ai pris en charge, les décisions d’ingénierie derrière le produit et la manière dont le système soutient des opérations réelles.">The focus is not the number of frameworks. It is what I owned, the engineering decisions behind the product, and how the system supports real operations.</p>
+      </div>
 
-      <article class="case-study flagship reveal" id="kora">
-        <div class="case-head">
-          <div>
+      <article class="project-case reveal" id="kora">
+        <div class="project-visual">
+          <div class="visual-frame">
+            <img src="assets/kora.png" alt="Kora fintech application interface" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-copy">
+          <div class="project-topline">
             <p class="case-kicker">01 · FINTECH</p>
-            <h3>Kora</h3>
-            <p class="case-subtitle" data-en="Cross-border fintech platform" data-fr="Plateforme fintech transfrontalière">Cross-border fintech platform</p>
+            <a class="text-link" href="https://koraworld.io" target="_blank" rel="noopener">koraworld.io <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
           </div>
-          <div class="case-links"><a class="btn secondary" href="https://koraworld.io" target="_blank" rel="noopener">koraworld.io</a></div>
-        </div>
-        <div class="case-grid">
-          <div class="case-summary">
-            <h4 data-en="Role & ownership" data-fr="Rôle & prise en charge">Role & ownership</h4>
-            <p data-en="Co-founder and founding full-stack engineer. Hands-on across the Flutter mobile app, Spring Boot backend, MySQL data architecture, React operations dashboard and Next.js public website." data-fr="Co-fondateur et ingénieur full-stack fondateur. Travail hands-on sur l’application Flutter, le backend Spring Boot, l’architecture MySQL, le dashboard opérationnel React et le site public Next.js.">Co-founder and founding full-stack engineer. Hands-on across the Flutter mobile app, Spring Boot backend, MySQL data architecture, React operations dashboard and Next.js public website.</p>
-            <div class="stack-line">Flutter · Spring Boot · MySQL · React</div>
+          <h3>Kora</h3>
+          <p class="case-subtitle" data-en="Cross-border fintech platform" data-fr="Plateforme fintech transfrontalière">Cross-border fintech platform</p>
+          <p class="project-summary" data-en="Co-founder and founding full-stack engineer. I worked across the Flutter mobile app, Spring Boot backend, MySQL data architecture, React operations dashboard and Next.js public website." data-fr="Co-fondateur et ingénieur full-stack fondateur. J’ai travaillé sur l’application Flutter, le backend Spring Boot, l’architecture MySQL, le dashboard opérationnel React et le site public Next.js.">Co-founder and founding full-stack engineer. I worked across the Flutter mobile app, Spring Boot backend, MySQL data architecture, React operations dashboard and Next.js public website.</p>
+          <div class="project-points">
+            <div><strong data-en="Payments" data-fr="Paiements">Payments</strong><span data-en="PayDunya integration and wallet flows" data-fr="Intégration PayDunya et flux wallet">PayDunya integration and wallet flows</span></div>
+            <div><strong>KYC</strong><span data-en="Liveness, documents, GCS and admin review" data-fr="Liveness, documents, GCS et revue admin">Liveness, documents, GCS and admin review</span></div>
+            <div><strong data-en="Realtime" data-fr="Temps réel">Realtime</strong><span data-en="FCM mobile notifications and SSE admin updates" data-fr="Notifications FCM et mises à jour admin SSE">FCM mobile notifications and SSE admin updates</span></div>
+            <div><strong data-en="Cross-border" data-fr="Transfrontalier">Cross-border</strong><span data-en="Contribution to Solana/USDT integration" data-fr="Contribution à l’intégration Solana/USDT">Contribution to Solana/USDT integration</span></div>
           </div>
-          <div class="case-details">
-            <h4 data-en="Selected engineering scope" data-fr="Portée technique sélectionnée">Selected engineering scope</h4>
-            <ul>
-              <li data-en="Built payment and wallet flows with PayDunya integration for local payment processing." data-fr="Développement des flux de paiement et wallet avec intégration PayDunya pour le traitement des paiements locaux.">Built payment and wallet flows with PayDunya integration for local payment processing.</li>
-              <li data-en="Designed KYC workflows spanning mobile liveness/document capture, Google Cloud Storage, backend states and time-bound admin review." data-fr="Conception de workflows KYC couvrant liveness/documents mobile, Google Cloud Storage, états backend et revue admin dans un délai défini.">Designed KYC workflows spanning mobile liveness/document capture, Google Cloud Storage, backend states and time-bound admin review.</li>
-              <li data-en="Used FCM for mobile notifications and SSE for real-time administration updates, with backend notification handling to reduce inconsistent state." data-fr="Utilisation de FCM pour les notifications mobiles et SSE pour les mises à jour admin temps réel, avec gestion backend des notifications pour limiter les incohérences d’état.">Used FCM for mobile notifications and SSE for real-time administration updates, with backend notification handling to reduce inconsistent state.</li>
-              <li data-en="Contributed to Solana/USDT cross-border transfer integration while another team member owns deeper Solana infrastructure specialization." data-fr="Contribution à l’intégration des transferts transfrontaliers Solana/USDT, avec un autre membre de l’équipe spécialisé plus profondément sur l’infrastructure Solana.">Contributed to Solana/USDT cross-border transfer integration while another team member owns deeper Solana infrastructure specialization.</li>
-            </ul>
+          <div class="project-footerline">
+            <span>Flutter · Spring Boot · MySQL · React</span>
+            <span class="status-dot" data-en="TestFlight + production transaction testing" data-fr="TestFlight + tests de transactions production">TestFlight + production transaction testing</span>
           </div>
-        </div>
-        <div class="case-status">
-          <strong data-en="Shipping evidence" data-fr="Preuves de mise en production">Shipping evidence</strong>
-          <span data-en="TestFlight testing · production transaction testing · Google Play review/release preparation" data-fr="Tests TestFlight · tests de transactions en production · préparation revue/release Google Play">TestFlight testing · production transaction testing · Google Play review/release preparation</span>
         </div>
       </article>
 
-      <article class="case-study flagship reveal" id="fidelity">
-        <div class="case-head">
-          <div>
+      <article class="project-case project-case-reverse reveal" id="fidelity">
+        <div class="project-visual">
+          <div class="visual-frame">
+            <img src="assets/fidelity-site.png" alt="Fidelity marketplace website interface" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-copy">
+          <div class="project-topline">
             <p class="case-kicker">02 · MARKETPLACE</p>
-            <h3>Fidelity Market</h3>
-            <p class="case-subtitle" data-en="Multi-platform marketplace and commerce operations" data-fr="Marketplace multi-plateforme et opérations commerce">Multi-platform marketplace and commerce operations</p>
+            <a class="text-link" href="https://fidelity-market.com" target="_blank" rel="noopener">fidelity-market.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
           </div>
-          <div class="case-links"><a class="btn secondary" href="https://fidelity-market.com" target="_blank" rel="noopener">fidelity-market.com</a></div>
-        </div>
-        <div class="case-grid">
-          <div class="case-summary">
-            <h4 data-en="What changed" data-fr="Ce qui a changé">What changed</h4>
-            <p data-en="Redesigned major parts of the marketplace across desktop, tablet and mobile while working across Angular, Spring Boot and Flutter. Improved product discovery, app-like mobile navigation and customer, seller, product, order and admin workflows." data-fr="Refonte de parties majeures de la marketplace sur desktop, tablette et mobile avec Angular, Spring Boot et Flutter. Amélioration de la découverte produit, de la navigation mobile type application et des workflows client, vendeur, produit, commande et admin.">Redesigned major parts of the marketplace across desktop, tablet and mobile while working across Angular, Spring Boot and Flutter. Improved product discovery, app-like mobile navigation and customer, seller, product, order and admin workflows.</p>
-            <div class="stack-line">Angular · Spring Boot · Flutter · MySQL</div>
+          <h3>Fidelity Market</h3>
+          <p class="case-subtitle" data-en="Marketplace and commerce operations" data-fr="Marketplace et opérations commerce">Marketplace and commerce operations</p>
+          <p class="project-summary" data-en="Redesigned major parts of the marketplace across desktop, tablet and mobile while working across Angular, Spring Boot and Flutter. I improved discovery, app-like navigation and core customer, seller, product, order and admin workflows." data-fr="Refonte de parties majeures de la marketplace sur desktop, tablette et mobile avec Angular, Spring Boot et Flutter. J’ai amélioré la découverte produit, la navigation type application et les principaux workflows client, vendeur, produit, commande et admin.">Redesigned major parts of the marketplace across desktop, tablet and mobile while working across Angular, Spring Boot and Flutter. I improved discovery, app-like navigation and core customer, seller, product, order and admin workflows.</p>
+          <div class="decision-card">
+            <span class="decision-label" data-en="ENGINEERING EXAMPLE" data-fr="EXEMPLE D’INGÉNIERIE">ENGINEERING EXAMPLE</span>
+            <strong data-en="Search redesign" data-fr="Refonte de la recherche">Search redesign</strong>
+            <p data-en="Moved product search away from repeated server-dependent exact matching toward cached client-side search with similarity scoring and synonym mapping, reducing unnecessary requests and improving tolerance for real user queries." data-fr="Évolution de la recherche depuis des correspondances exactes dépendantes du serveur vers une recherche côté client avec cache, score de similarité et mapping de synonymes, afin de réduire les requêtes inutiles et mieux tolérer les recherches réelles des utilisateurs.">Moved product search away from repeated server-dependent exact matching toward cached client-side search with similarity scoring and synonym mapping, reducing unnecessary requests and improving tolerance for real user queries.</p>
           </div>
-          <div class="case-details">
-            <h4 data-en="Engineering example: search redesign" data-fr="Exemple d’ingénierie : refonte de la recherche">Engineering example: search redesign</h4>
-            <p data-en="Moved product search away from repeated server-dependent exact matching toward cached client-side search using similarity scoring and synonym mapping. The goal was faster feedback, fewer unnecessary backend requests and better tolerance for how people actually search." data-fr="Évolution de la recherche produit depuis des correspondances exactes dépendantes du serveur vers une recherche côté client avec cache, score de similarité et mapping de synonymes. Objectif : retour plus rapide, moins de requêtes backend inutiles et meilleure tolérance à la façon réelle dont les utilisateurs recherchent.">Moved product search away from repeated server-dependent exact matching toward cached client-side search using similarity scoring and synonym mapping. The goal was faster feedback, fewer unnecessary backend requests and better tolerance for how people actually search.</p>
+          <div class="project-footerline">
+            <span>Angular · Spring Boot · Flutter · MySQL</span>
           </div>
         </div>
       </article>
 
-      <article class="case-study technical reveal" id="ai-pipeline">
-        <div class="case-head">
-          <div>
+      <article class="project-case reveal" id="ai-pipeline">
+        <div class="project-visual">
+          <div class="visual-frame">
+            <img src="assets/image-pipeline.png" alt="AI-assisted product image and publishing workflow" loading="lazy" />
+          </div>
+        </div>
+        <div class="project-copy">
+          <div class="project-topline">
             <p class="case-kicker">03 · APPLIED AI / AUTOMATION</p>
-            <h3>AI Product Image & Publishing Pipeline</h3>
-            <p class="case-subtitle" data-en="Human-in-the-loop e-commerce automation used in operations" data-fr="Automatisation e-commerce avec validation humaine, utilisée en opérations">Human-in-the-loop e-commerce automation used in operations</p>
           </div>
-        </div>
-        <div class="pipeline" aria-label="AI publishing workflow">
-          <span>Google Drive</span><span>→</span><span>Variant grouping</span><span>→</span><span>Gemini routing</span><span>→</span><span>Image generation</span><span>→</span><span>QA</span><span>→</span><span>Human approval</span><span>→</span><span>Draft product</span>
-        </div>
-        <div class="case-grid">
-          <div class="case-summary">
-            <h4 data-en="System" data-fr="Système">System</h4>
-            <p data-en="Built and integrated an operational workflow using Python/FastAPI, Gemini API, Google Drive APIs and image-processing tools to transform raw product images into review-ready catalog assets and draft products." data-fr="Construction et intégration d’un workflow opérationnel avec Python/FastAPI, Gemini API, APIs Google Drive et outils de traitement d’image pour transformer des visuels bruts en assets catalogue prêts à être revus et en produits brouillons.">Built and integrated an operational workflow using Python/FastAPI, Gemini API, Google Drive APIs and image-processing tools to transform raw product images into review-ready catalog assets and draft products.</p>
-            <div class="stack-line">Python · FastAPI · Gemini API · Google Drive API</div>
+          <h3>AI Product Image & Publishing Pipeline</h3>
+          <p class="case-subtitle" data-en="Human-in-the-loop e-commerce automation used in operations" data-fr="Automatisation e-commerce avec validation humaine utilisée en opérations">Human-in-the-loop e-commerce automation used in operations</p>
+          <p class="project-summary" data-en="Built and integrated an operational workflow using Python/FastAPI, Gemini API, Google Drive APIs and image-processing tools to transform raw product visuals into review-ready catalog assets and draft products." data-fr="Construction et intégration d’un workflow opérationnel avec Python/FastAPI, Gemini API, APIs Google Drive et outils de traitement d’image pour transformer des visuels bruts en assets catalogue prêts à être revus et en produits brouillons.">Built and integrated an operational workflow using Python/FastAPI, Gemini API, Google Drive APIs and image-processing tools to transform raw product visuals into review-ready catalog assets and draft products.</p>
+          <div class="pipeline-premium" aria-label="AI publishing workflow">
+            <span>Drive</span><i>→</i><span>Grouping</span><i>→</i><span>Gemini</span><i>→</i><span>QA</span><i>→</i><span>Review</span><i>→</i><span>Draft</span>
           </div>
-          <div class="case-details">
-            <h4 data-en="Design principle: automation with control" data-fr="Principe de conception : automatisation avec contrôle">Design principle: automation with control</h4>
-            <ul>
-              <li data-en="Groups product variants and routes categories before generation." data-fr="Regroupe les variantes produit et route les catégories avant génération.">Groups product variants and routes categories before generation.</li>
-              <li data-en="Runs image-quality checks and records rejected outputs with reasons." data-fr="Exécute des contrôles qualité image et enregistre les rejets avec leurs motifs.">Runs image-quality checks and records rejected outputs with reasons.</li>
-              <li data-en="Keeps traceability and human approval before final publication." data-fr="Conserve la traçabilité et une validation humaine avant publication finale.">Keeps traceability and human approval before final publication.</li>
-              <li data-en="Creates drafts rather than silently publishing AI output." data-fr="Crée des brouillons plutôt que de publier silencieusement les sorties IA.">Creates drafts rather than silently publishing AI output.</li>
-            </ul>
+          <div class="decision-card">
+            <span class="decision-label" data-en="DESIGN PRINCIPLE" data-fr="PRINCIPE DE CONCEPTION">DESIGN PRINCIPLE</span>
+            <strong data-en="Automation with control" data-fr="Automatisation avec contrôle">Automation with control</strong>
+            <p data-en="Rejected outputs are recorded with reasons, traceability is preserved, and publication still requires human approval instead of silently pushing AI output live." data-fr="Les sorties rejetées sont enregistrées avec leurs motifs, la traçabilité est conservée et la publication nécessite toujours une validation humaine au lieu de mettre automatiquement les sorties IA en ligne.">Rejected outputs are recorded with reasons, traceability is preserved, and publication still requires human approval instead of silently pushing AI output live.</p>
+          </div>
+          <div class="project-footerline">
+            <span>Python · FastAPI · Gemini API · Google Drive API</span>
           </div>
         </div>
       </article>
 
+      <div class="earlier-heading reveal">
+        <p class="eyebrow" data-en="EARLIER ENGINEERING WORK" data-fr="TRAVAUX TECHNIQUES ANTÉRIEURS">EARLIER ENGINEERING WORK</p>
+      </div>
       <div class="earlier-work">
-        <article class="card reveal">
-          <p class="case-kicker">EARLIER WORK</p>
-          <h3>GeoTrac Platform</h3>
-          <p data-en="Full-stack lost-item reporting, search and owner-matching platform built with Angular, Spring Boot and MySQL, including responsive user flows and structured reporting." data-fr="Plateforme full-stack de signalement d’objets perdus, recherche et matching propriétaire avec Angular, Spring Boot et MySQL, incluant parcours responsives et signalement structuré.">Full-stack lost-item reporting, search and owner-matching platform built with Angular, Spring Boot and MySQL, including responsive user flows and structured reporting.</p>
-          <div class="stack-line">Angular · Spring Boot · MySQL</div>
+        <article class="earlier-card reveal">
+          <div class="earlier-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+          <div>
+            <h3>GeoTrac Platform</h3>
+            <p data-en="Full-stack lost-item reporting, search and owner-matching platform built with Angular, Spring Boot and MySQL." data-fr="Plateforme full-stack de signalement d’objets perdus, recherche et matching propriétaire construite avec Angular, Spring Boot et MySQL.">Full-stack lost-item reporting, search and owner-matching platform built with Angular, Spring Boot and MySQL.</p>
+            <span>Angular · Spring Boot · MySQL</span>
+          </div>
         </article>
-        <article class="card reveal">
-          <p class="case-kicker">EARLIER WORK</p>
-          <h3>GeoPoint Mobile</h3>
-          <p data-en="Flutter field-operations application with QR-based check-ins, task workflows and team coordination." data-fr="Application Flutter pour opérations terrain avec pointages QR, workflows de tâches et coordination d’équipe.">Flutter field-operations application with QR-based check-ins, task workflows and team coordination.</p>
-          <div class="stack-line">Flutter · Dart</div>
+        <article class="earlier-card reveal">
+          <div class="earlier-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+          <div>
+            <h3>GeoPoint Mobile</h3>
+            <p data-en="Flutter field-operations application with QR-based check-ins, task workflows and team coordination." data-fr="Application Flutter pour opérations terrain avec pointages QR, workflows de tâches et coordination d’équipe.">Flutter field-operations application with QR-based check-ins, task workflows and team coordination.</p>
+            <span>Flutter · Dart</span>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section container" id="experience">
-      <p class="eyebrow" data-en="EXPERIENCE" data-fr="EXPÉRIENCE">EXPERIENCE</p>
-      <h2 class="section-title" data-en="Professional timeline" data-fr="Parcours professionnel">Professional timeline</h2>
-      <div class="timeline-static">
-        <article class="timeline-item reveal">
-          <div class="timeline-meta"><strong>Kora</strong><span>Oct 2025 – Present · Part-time · Remote</span></div>
-          <div><h3 data-en="Co-founder & Founding Full-Stack Engineer" data-fr="Co-fondateur & Ingénieur Full-Stack Fondateur">Co-founder & Founding Full-Stack Engineer</h3><p data-en="Hands-on across mobile, backend, data architecture, operations dashboard, payments, KYC, notifications, deployment and release preparation." data-fr="Travail hands-on sur mobile, backend, architecture de données, dashboard opérationnel, paiements, KYC, notifications, déploiement et préparation des releases.">Hands-on across mobile, backend, data architecture, operations dashboard, payments, KYC, notifications, deployment and release preparation.</p></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-en="EXPERIENCE" data-fr="EXPÉRIENCE">EXPERIENCE</p>
+        <h2 class="section-title" data-en="From client work to product ownership" data-fr="Du travail client à la prise en charge produit">From client work to product ownership</h2>
+      </div>
+      <div class="experience-list">
+        <article class="experience-row reveal">
+          <div class="experience-company"><strong>Kora</strong><span>Oct 2025 - Present · Part-time · Remote</span></div>
+          <div class="experience-detail"><h3 data-en="Co-founder & Founding Full-Stack Engineer" data-fr="Co-fondateur & Ingénieur Full-Stack Fondateur">Co-founder & Founding Full-Stack Engineer</h3><p data-en="Hands-on across mobile, backend, data architecture, operations dashboard, payments, KYC, notifications, deployment and release preparation." data-fr="Travail hands-on sur mobile, backend, architecture de données, dashboard opérationnel, paiements, KYC, notifications, déploiement et préparation des releases.">Hands-on across mobile, backend, data architecture, operations dashboard, payments, KYC, notifications, deployment and release preparation.</p></div>
         </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-meta"><strong>Fidelity</strong><span>Feb 2024 – Apr 2026 · Remote</span></div>
-          <div><h3 data-en="Web / Mobile Developer" data-fr="Développeur Web / Mobile">Web / Mobile Developer</h3><p data-en="Marketplace redesign, Spring Boot feature work, Flutter/Angular delivery, product-search redesign and AI-assisted e-commerce automation." data-fr="Refonte marketplace, fonctionnalités Spring Boot, livraison Flutter/Angular, refonte de la recherche produit et automatisation e-commerce assistée par IA.">Marketplace redesign, Spring Boot feature work, Flutter/Angular delivery, product-search redesign and AI-assisted e-commerce automation.</p></div>
+        <article class="experience-row reveal">
+          <div class="experience-company"><strong>Fidelity</strong><span>Feb 2024 - Apr 2026 · Remote</span></div>
+          <div class="experience-detail"><h3 data-en="Web / Mobile Developer" data-fr="Développeur Web / Mobile">Web / Mobile Developer</h3><p data-en="Marketplace redesign, Spring Boot feature work, Flutter/Angular delivery, product-search redesign and AI-assisted e-commerce automation." data-fr="Refonte marketplace, fonctionnalités Spring Boot, livraison Flutter/Angular, refonte de la recherche produit et automatisation e-commerce assistée par IA.">Marketplace redesign, Spring Boot feature work, Flutter/Angular delivery, product-search redesign and AI-assisted e-commerce automation.</p></div>
         </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-meta"><strong>GeoTrac</strong><span>Jun 2023 – Sep 2023 · Bamako, Mali</span></div>
-          <div><h3 data-en="Full-Stack Web Developer" data-fr="Développeur Web Full-Stack">Full-Stack Web Developer</h3><p data-en="Website redesign and Angular/Spring Boot/MySQL platform development for lost-item reporting and owner matching." data-fr="Refonte de site et développement d’une plateforme Angular/Spring Boot/MySQL pour signalement d’objets perdus et matching propriétaire.">Website redesign and Angular/Spring Boot/MySQL platform development for lost-item reporting and owner matching.</p></div>
+        <article class="experience-row reveal">
+          <div class="experience-company"><strong>GeoTrac</strong><span>Jun 2023 - Sep 2023 · Bamako, Mali</span></div>
+          <div class="experience-detail"><h3 data-en="Full-Stack Web Developer" data-fr="Développeur Web Full-Stack">Full-Stack Web Developer</h3><p data-en="Website redesign and Angular/Spring Boot/MySQL platform development for lost-item reporting and owner matching." data-fr="Refonte de site et développement d’une plateforme Angular/Spring Boot/MySQL pour signalement d’objets perdus et matching propriétaire.">Website redesign and Angular/Spring Boot/MySQL platform development for lost-item reporting and owner matching.</p></div>
         </article>
-        <article class="timeline-item reveal">
-          <div class="timeline-meta"><strong>Aplika</strong><span>Mar 2022 – Nov 2022 · Bamako, Mali</span></div>
-          <div><h3 data-en="Junior Web Developer" data-fr="Développeur Web Junior">Junior Web Developer</h3><p data-en="Client showcase and e-commerce websites, responsive frontend implementation and practical WordPress/PHP customizations when standard editing was insufficient." data-fr="Sites vitrines et e-commerce clients, intégration frontend responsive et personnalisations WordPress/PHP lorsque l’édition standard ne suffisait pas.">Client showcase and e-commerce websites, responsive frontend implementation and practical WordPress/PHP customizations when standard editing was insufficient.</p></div>
+        <article class="experience-row reveal">
+          <div class="experience-company"><strong>Aplika</strong><span>Mar 2022 - Nov 2022 · Bamako, Mali</span></div>
+          <div class="experience-detail"><h3 data-en="Junior Web Developer" data-fr="Développeur Web Junior">Junior Web Developer</h3><p data-en="Client showcase and e-commerce websites, responsive frontend implementation and practical WordPress/PHP customizations when standard editing was insufficient." data-fr="Sites vitrines et e-commerce clients, intégration frontend responsive et personnalisations WordPress/PHP lorsque l’édition standard ne suffisait pas.">Client showcase and e-commerce websites, responsive frontend implementation and practical WordPress/PHP customizations when standard editing was insufficient.</p></div>
         </article>
       </div>
     </section>
 
     <section class="section container" id="skills">
-      <p class="eyebrow" data-en="TECHNICAL STACK" data-fr="STACK TECHNIQUE">TECHNICAL STACK</p>
-      <h2 class="section-title" data-en="Primary tools, then supporting experience" data-fr="Technologies principales, puis expérience complémentaire">Primary tools, then supporting experience</h2>
-      <div class="stack-groups">
-        <div class="stack-group"><h3>Backend</h3><p>Java · Spring Boot · REST APIs · MySQL</p></div>
-        <div class="stack-group"><h3>Mobile</h3><p>Flutter · Dart · FCM</p></div>
-        <div class="stack-group"><h3>Frontend</h3><p>TypeScript · Angular · React · JavaScript</p></div>
-        <div class="stack-group"><h3 data-en="Automation & integrations" data-fr="Automatisation & intégrations">Automation & integrations</h3><p>Python · FastAPI · Gemini API · Google Drive API · Google Cloud Storage</p></div>
-        <div class="stack-group"><h3 data-en="Supporting" data-fr="Complémentaire">Supporting</h3><p>Docker · Git/GitHub · PHP · Laravel · WordPress · Next.js</p></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-en="TECHNICAL STACK" data-fr="STACK TECHNIQUE">TECHNICAL STACK</p>
+        <h2 class="section-title" data-en="Primary strengths, with supporting range" data-fr="Forces principales, avec une expérience complémentaire">Primary strengths, with supporting range</h2>
       </div>
-      <p class="small stack-note" data-en="The supporting list is intentionally secondary: my strongest current engineering evidence is Java/Spring Boot, Flutter and TypeScript product work." data-fr="La liste complémentaire est volontairement secondaire : mes preuves techniques récentes les plus solides sont Java/Spring Boot, Flutter et le travail produit en TypeScript.">The supporting list is intentionally secondary: my strongest current engineering evidence is Java/Spring Boot, Flutter and TypeScript product work.</p>
+      <div class="stack-grid">
+        <article class="stack-card core reveal"><span class="stack-index">01</span><h3>Backend</h3><p>Java · Spring Boot · REST APIs · MySQL</p></article>
+        <article class="stack-card core reveal"><span class="stack-index">02</span><h3>Mobile</h3><p>Flutter · Dart · FCM</p></article>
+        <article class="stack-card core reveal"><span class="stack-index">03</span><h3>Frontend</h3><p>TypeScript · Angular · React · JavaScript</p></article>
+        <article class="stack-card reveal"><span class="stack-index">04</span><h3 data-en="Automation & integrations" data-fr="Automatisation & intégrations">Automation & integrations</h3><p>Python · FastAPI · Gemini API · Google Drive API · Google Cloud Storage</p></article>
+        <article class="stack-card reveal"><span class="stack-index">05</span><h3 data-en="Supporting" data-fr="Complémentaire">Supporting</h3><p>Docker · Git/GitHub · PHP · Laravel · WordPress · Next.js</p></article>
+      </div>
     </section>
 
-    <section class="section container" id="education">
-      <div class="grid grid-2">
-        <div class="card reveal">
-          <p class="eyebrow" data-en="EDUCATION" data-fr="FORMATION">EDUCATION</p>
-          <h3 data-en="Professional University Degree in Web Application Development and Mobile Technologies" data-fr="Licence Professionnelle — Développement des Applications Web et Technologies Mobiles">Professional University Degree in Web Application Development and Mobile Technologies</h3>
-          <p>École Supérieure de Technologie de Casablanca, Université Hassan II · July 2026</p>
-        </div>
-        <div class="card reveal">
-          <p class="eyebrow" data-en="LANGUAGES" data-fr="LANGUES">LANGUAGES</p>
-          <h3 data-en="Bambara native · French fluent · English professional working proficiency" data-fr="Bambara natif · Français courant · Anglais niveau professionnel">Bambara native · French fluent · English professional working proficiency</h3>
-          <p data-en="TOEFL iBT 80/120 · CEFR B2 · June 2026" data-fr="TOEFL iBT 80/120 · CECR B2 · Juin 2026">TOEFL iBT 80/120 · CEFR B2 · June 2026</p>
-        </div>
+    <section class="section container credentials-section">
+      <div class="credential-card reveal">
+        <p class="eyebrow" data-en="EDUCATION" data-fr="FORMATION">EDUCATION</p>
+        <h3 data-en="Professional University Degree in Web Application Development and Mobile Technologies" data-fr="Licence Professionnelle - Développement des Applications Web et Technologies Mobiles">Professional University Degree in Web Application Development and Mobile Technologies</h3>
+        <p>École Supérieure de Technologie de Casablanca, Université Hassan II · July 2026</p>
+      </div>
+      <div class="credential-card reveal">
+        <p class="eyebrow" data-en="LANGUAGES" data-fr="LANGUES">LANGUAGES</p>
+        <h3 data-en="Bambara native · French fluent · English professional working proficiency" data-fr="Bambara natif · Français courant · Anglais niveau professionnel">Bambara native · French fluent · English professional working proficiency</h3>
+        <p data-en="TOEFL iBT 80/120 · CEFR B2 · June 2026" data-fr="TOEFL iBT 80/120 · CECR B2 · Juin 2026">TOEFL iBT 80/120 · CEFR B2 · June 2026</p>
       </div>
     </section>
 
     <section class="section container" id="contact">
-      <div class="contact-panel reveal">
-        <div>
+      <div class="contact-premium reveal">
+        <div class="contact-copy">
           <p class="eyebrow" data-en="CONTACT" data-fr="CONTACT">CONTACT</p>
-          <h2 class="section-title" data-en="Open to remote engineering roles and contracts" data-fr="Ouvert aux postes d’ingénierie à distance et aux contrats">Open to remote engineering roles and contracts</h2>
-          <p data-en="Best fit: product engineering, Java/Spring Boot, fintech/payments, marketplaces, Flutter/mobile and practical automation." data-fr="Meilleur fit : product engineering, Java/Spring Boot, fintech/paiements, marketplaces, Flutter/mobile et automatisation pratique.">Best fit: product engineering, Java/Spring Boot, fintech/payments, marketplaces, Flutter/mobile and practical automation.</p>
+          <h2 data-en="Open to remote engineering roles and contracts." data-fr="Ouvert aux postes d’ingénierie à distance et aux contrats.">Open to remote engineering roles and contracts.</h2>
+          <p data-en="Best fit: product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/payments and practical automation." data-fr="Meilleur fit : product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/paiements et automatisation pratique.">Best fit: product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/payments and practical automation.</p>
         </div>
-        <div class="contact-links">
-          <a class="btn" href="mailto:gdiarrag@gmail.com">gdiarrag@gmail.com</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/gaoussou-diarra" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn secondary" href="https://github.com/GAUSST" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn secondary" href="resume.html" data-en="HTML résumé" data-fr="CV HTML">HTML résumé</a>
+        <div class="contact-actions">
+          <a class="contact-primary" href="mailto:gdiarrag@gmail.com">gdiarrag@gmail.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <div class="contact-secondary-row">
+            <a href="https://www.linkedin.com/in/gaoussou-diarra" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+            <a href="https://github.com/GAUSST" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer container">
-    <div>© <span id="year">2026</span> Gaoussou Diarra · <a href="portfolio.json">portfolio.json</a> · <a href="llms.txt">llms.txt</a></div>
+    <div>© <span id="year">2026</span> Gaoussou Diarra</div>
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
