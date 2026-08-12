@@ -26,6 +26,34 @@ document
   .querySelectorAll('.hero-actions a[href="resume.html"], .hero-actions a[href="#contact"]')
   .forEach((el) => el.remove());
 
+// Surface Fidelity's app entry point next to the public marketplace link.
+const fidelityTopline = document.querySelector("#fidelity .project-topline");
+const fidelitySiteLink = fidelityTopline?.querySelector('a[href="https://fidelity-market.com"]');
+if (fidelityTopline && fidelitySiteLink) {
+  const links = document.createElement("div");
+  links.className = "project-links";
+  Object.assign(links.style, {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    flexWrap: "wrap",
+    gap: ".85rem",
+  });
+
+  fidelitySiteLink.replaceWith(links);
+  links.appendChild(fidelitySiteLink);
+
+  const appLink = document.createElement("a");
+  appLink.className = "text-link";
+  appLink.href = "https://fidelity-market.com/app";
+  appLink.target = "_blank";
+  appLink.rel = "noopener";
+  appLink.dataset.en = "Open app ↗";
+  appLink.dataset.fr = "Ouvrir l’app ↗";
+  appLink.textContent = "Open app ↗";
+  links.appendChild(appLink);
+}
+
 const LANG_KEY = "gd_lang";
 let lang = localStorage.getItem(LANG_KEY) || (navigator.language?.startsWith("fr") ? "fr" : "en");
 
