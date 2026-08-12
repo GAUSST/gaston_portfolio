@@ -1,43 +1,42 @@
-/* Portfolio flagship cards: full-width visual first, content below. */
-
-/*
-  Live review showed that side-by-side media forces incompatible crops across
-  the Kora, Fidelity and AI assets. The fix is structural rather than another
-  object-fit compromise: each project gets a full-width visual stage, then the
-  engineering story below it.
-*/
+/* Portfolio flagship cards: image first, engineering story below. */
 
 .project-case,
 .project-case.project-case-reverse {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  overflow: hidden;
 }
 
 .project-case-reverse .project-visual {
   order: 0;
 }
 
+/*
+  The first image-on-top pass respected the source ratio exactly, which made the
+  artwork dominate the page. Treat the image as a product banner instead: it
+  stays above the copy, spans the card, and gets a controlled cinematic height.
+  This avoids the old side-by-side crop while keeping the page compact.
+*/
 .project-visual {
   width: 100%;
-  padding: 0;
-  background: #0d1017;
+  padding: clamp(.75rem, 1.5vw, 1.15rem);
+  background: linear-gradient(145deg, #111521, #191f2d);
 }
 
 .visual-frame {
   position: relative;
   display: block;
   width: 100%;
-  height: auto;
+  height: clamp(300px, 26vw, 390px);
   min-height: 0;
   overflow: hidden;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  background: #0d1017;
+  box-shadow: 0 18px 45px rgba(4, 9, 20, .18);
 }
 
-/* Remove the previous blurred/contain staging. */
 .visual-frame::before,
 .visual-frame::after {
   content: none !important;
@@ -51,14 +50,18 @@
   position: static;
   display: block;
   width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: initial;
-  object-position: initial;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: 0;
   box-shadow: none;
   transform: none;
 }
+
+/* Preserve the useful visual focus of each source asset. */
+#kora .visual-frame img { object-position: center 48%; }
+#fidelity .visual-frame img { object-position: center 42%; }
+#ai-pipeline .visual-frame img { object-position: center 48%; }
 
 .project-case:hover .visual-frame img {
   transform: none;
@@ -67,11 +70,9 @@
 .project-copy {
   width: 100%;
   max-width: none;
-  padding: clamp(2rem, 4vw, 3.6rem);
+  padding: clamp(1.8rem, 3.4vw, 3.1rem);
 }
 
-/* Full-width copy lets the technical story read like a case study rather than
-   a cramped sidebar. Keep prose to a comfortable line length. */
 .project-copy > .project-summary,
 .project-copy > .decision-card {
   max-width: 920px;
@@ -85,18 +86,74 @@
   max-width: 100%;
 }
 
+/* Education and languages are supporting credentials, not the main story. */
+.credentials-section {
+  gap: 1.35rem !important;
+  padding-top: clamp(2.2rem, 4vw, 3.5rem) !important;
+}
+
+.credentials-section .credential-card {
+  padding: 1.15rem 0 0 !important;
+  border: 0 !important;
+  border-top: 1px solid var(--border, rgba(120, 130, 150, .24)) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.credentials-section .credential-card .eyebrow {
+  margin-bottom: .55rem;
+}
+
+.credentials-section .credential-card h3 {
+  max-width: 620px;
+  margin: 0 0 .45rem;
+  font-size: clamp(1rem, 1.5vw, 1.12rem) !important;
+  line-height: 1.38;
+}
+
+.credentials-section .credential-card > p:last-child {
+  margin: 0;
+  font-size: .9rem;
+  opacity: .76;
+}
+
+.experience-context {
+  margin-top: .65rem;
+  max-width: 720px;
+  color: var(--muted);
+  font-size: .98rem;
+}
+
 @media (max-width: 900px) {
+  .visual-frame {
+    height: clamp(250px, 48vw, 340px);
+  }
+
   .project-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 620px) {
+  .project-visual {
+    padding: .55rem;
+  }
+
+  .visual-frame {
+    height: 230px;
+    border-radius: 14px;
+  }
+
   .project-copy {
     padding: 1.45rem;
   }
 
   .project-points {
     grid-template-columns: 1fr;
+  }
+
+  .credentials-section {
+    gap: 1rem !important;
   }
 }
