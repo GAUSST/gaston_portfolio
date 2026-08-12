@@ -20,6 +20,12 @@ initScrollSpy();
 const revealObserver = initReveal();
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
+// Keep the hero focused on one primary action. Resume download remains in the
+// header and contact links remain in the dedicated contact section.
+document
+  .querySelectorAll('.hero-actions a[href="resume.html"], .hero-actions a[href="#contact"]')
+  .forEach((el) => el.remove());
+
 const LANG_KEY = "gd_lang";
 let lang = localStorage.getItem(LANG_KEY) || (navigator.language?.startsWith("fr") ? "fr" : "en");
 
