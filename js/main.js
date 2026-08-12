@@ -1,5 +1,5 @@
 import { initTheme } from "./theme.js";
-import { mountMenuToggle, initMobileUtils, initScrollSpy } from "./ui.js";
+import { mountMenuToggle, initMobileUtils, initScrollSpy, initReveal } from "./ui.js";
 
 // Keep the base stylesheet for backward compatibility and layer the V2 case-study system on top.
 if (!document.querySelector('link[href="v2.css"]')) {
@@ -13,6 +13,12 @@ initTheme();
 mountMenuToggle();
 initMobileUtils();
 initScrollSpy();
+
+// Progressive reveal enhancement. The V2 markup is static, but the legacy
+// stylesheet still expects .reveal elements to be observed before they become
+// visible. Without this, the hero occupies space while remaining transparent.
+const revealObserver = initReveal();
+document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 const LANG_KEY = "gd_lang";
 let lang = localStorage.getItem(LANG_KEY) || (navigator.language?.startsWith("fr") ? "fr" : "en");
