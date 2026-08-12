@@ -1,12 +1,18 @@
 import { initTheme } from "./theme.js";
 import { mountMenuToggle, initMobileUtils, initScrollSpy, initReveal } from "./ui.js";
 
-// Keep the base stylesheet for backward compatibility and layer the V2 case-study system on top.
+// Keep the base stylesheet for backward compatibility and layer the V2/V3 case-study system on top.
 if (!document.querySelector('link[href="v2.css"]')) {
   const v2 = document.createElement("link");
   v2.rel = "stylesheet";
   v2.href = "v2.css";
   document.head.appendChild(v2);
+}
+if (!document.querySelector('link[href="v3-fixes.css"]')) {
+  const v3Fixes = document.createElement("link");
+  v3Fixes.rel = "stylesheet";
+  v3Fixes.href = "v3-fixes.css";
+  document.head.appendChild(v3Fixes);
 }
 
 initTheme();
@@ -14,9 +20,7 @@ mountMenuToggle();
 initMobileUtils();
 initScrollSpy();
 
-// Progressive reveal enhancement. The V2 markup is static, but the legacy
-// stylesheet still expects .reveal elements to be observed before they become
-// visible. Without this, the hero occupies space while remaining transparent.
+// Progressive reveal enhancement.
 const revealObserver = initReveal();
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
@@ -52,6 +56,30 @@ if (fidelityTopline && fidelitySiteLink) {
   appLink.dataset.fr = "Ouvrir l’app ↗";
   appLink.textContent = "Open app ↗";
   links.appendChild(appLink);
+}
+
+// Broaden availability so the portfolio does not imply remote-only interest.
+const contactHeading = document.querySelector("#contact h2");
+if (contactHeading) {
+  contactHeading.dataset.en = "Open to engineering roles and contracts.";
+  contactHeading.dataset.fr = "Ouvert aux postes d’ingénierie et aux contrats.";
+  contactHeading.textContent = "Open to engineering roles and contracts.";
+}
+
+const contactIntro = document.querySelector("#contact .contact-copy > p:last-child");
+if (contactIntro) {
+  contactIntro.dataset.en = "Based in Casablanca. Remote is preferred, while strong on-site opportunities remain open. Best fit: product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/payments and practical automation.";
+  contactIntro.dataset.fr = "Basé à Casablanca. Le remote est privilégié, tout en restant ouvert aux bonnes opportunités sur site. Meilleur fit : product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/paiements et automatisation pratique.";
+}
+
+// Keep the current verified TOEFL credential concise on the public portfolio.
+// The official June 2026 report is CEFR B2; the numeric score is intentionally
+// omitted here rather than replaced with an unverified higher number.
+const toeflLine = document.querySelector(".credentials-section .credential-card:last-child > p:last-child");
+if (toeflLine) {
+  toeflLine.dataset.en = "TOEFL iBT · CEFR B2 · June 2026";
+  toeflLine.dataset.fr = "TOEFL iBT · CECR B2 · Juin 2026";
+  toeflLine.textContent = "TOEFL iBT · CEFR B2 · June 2026";
 }
 
 const LANG_KEY = "gd_lang";
