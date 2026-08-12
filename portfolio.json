@@ -21,7 +21,8 @@
       "role": "Web / Mobile Developer",
       "stack": ["Angular", "Spring Boot", "Flutter", "MySQL"],
       "scope": ["marketplace UX redesign", "mobile navigation", "backend features", "product discovery", "client-side similarity and synonym search", "AI-assisted e-commerce automation"],
-      "url": "https://fidelity-market.com"
+      "url": "https://fidelity-market.com",
+      "app_url": "https://fidelity-market.com/app"
     },
     {
       "name": "AI Product Image & Publishing Pipeline",
