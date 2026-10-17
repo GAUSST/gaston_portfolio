@@ -96,24 +96,6 @@ if (experienceHeading && !experienceHeading.querySelector(".experience-context")
   experienceHeading.appendChild(context);
 }
 
-// Keep education visible as a supporting credential rather than the dominant
-// signal. The exact month remains available in the CV; the portfolio only needs
-// the year.
-const educationCard = document.querySelector(".credentials-section .credential-card:first-child");
-if (educationCard) {
-  const educationTitle = educationCard.querySelector("h3");
-  if (educationTitle) {
-    educationTitle.dataset.en = "Professional University Degree · Web Application Development & Mobile Technologies";
-    educationTitle.dataset.fr = "Licence Professionnelle · Développement des Applications Web et Technologies Mobiles";
-    educationTitle.textContent = educationTitle.dataset.en;
-  }
-
-  const educationMeta = educationCard.querySelector(":scope > p:last-child");
-  if (educationMeta) {
-    educationMeta.textContent = "École Supérieure de Technologie de Casablanca, Université Hassan II · 2026";
-  }
-}
-
 // Broaden availability so the portfolio does not imply remote-only interest.
 const contactHeading = document.querySelector("#contact h2");
 if (contactHeading) {
@@ -126,14 +108,6 @@ const contactIntro = document.querySelector("#contact .contact-copy > p:last-chi
 if (contactIntro) {
   contactIntro.dataset.en = "Based in Casablanca. Remote is preferred, while strong on-site opportunities remain open. Best fit: product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/payments and practical automation.";
   contactIntro.dataset.fr = "Basé à Casablanca. Le remote est privilégié, tout en restant ouvert aux bonnes opportunités sur site. Meilleur fit : product engineering, Java/Spring Boot, Flutter/mobile, marketplaces, fintech/paiements et automatisation pratique.";
-}
-
-// Keep the current verified TOEFL credential concise on the public portfolio.
-const toeflLine = document.querySelector(".credentials-section .credential-card:last-child > p:last-child");
-if (toeflLine) {
-  toeflLine.dataset.en = "TOEFL iBT · CEFR B2 · June 2026";
-  toeflLine.dataset.fr = "TOEFL iBT · CECR B2 · Juin 2026";
-  toeflLine.textContent = "TOEFL iBT · CEFR B2 · June 2026";
 }
 
 const LANG_KEY = "gd_lang";

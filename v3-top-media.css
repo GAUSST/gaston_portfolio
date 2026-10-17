@@ -157,3 +157,20 @@
     gap: 1rem !important;
   }
 }
+
+/* Language names and levels stay readable without a long headline. */
+.credentials-section .language-card .eyebrow {
+  font-size: .76rem !important;
+  margin-bottom: .65rem;
+}
+.language-list { margin: 0 0 1rem; }
+.language-list > div {
+  display: grid;
+  grid-template-columns: minmax(5rem, .65fr) minmax(0, 1.35fr);
+  gap: 1rem;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--premium-border, rgba(120, 130, 150, .2));
+}
+.language-list dt { font-weight: 600; }
+.language-list dd { margin: 0; color: var(--muted); line-height: 1.5; }
+.credentials-section .language-note { font-size: .8rem; line-height: 1.5; }
