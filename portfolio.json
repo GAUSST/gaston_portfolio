@@ -44,7 +44,9 @@
         "TestFlight"
       ],
       "scope": [
-        "My contribution: Flutter UI on iOS and Android, REST/JSON integration with the backend team, codebase refactoring, Android production builds and iOS TestFlight releases."
+        "My contribution: Flutter development on iOS and Android, including video and audio features, feed and story management, REST/JSON integration with the backend team, codebase refactoring, Android production builds and iOS TestFlight releases.",
+        "Video and audio features",
+        "Feed and story management"
       ],
       "url": "https://barberchat.ma/"
     },

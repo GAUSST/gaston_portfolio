@@ -225,7 +225,7 @@ export const I18N = {
       {
         "title": "Mobile Application Developer — BarberChat",
         "period": "Aug 2026 – Present · Full-time · On-site · Casablanca-Settat, Morocco",
-        "desc": "Build Flutter UI for iOS and Android, collaborate on REST API contracts and JSON integration, refactor the mobile codebase, and manage Android production builds and iOS TestFlight deployments."
+        "desc": "Build Flutter UI for iOS and Android, including video and audio features and feed and story management; collaborate on REST API contracts and JSON integration, refactor the mobile codebase, and manage Android production builds and iOS TestFlight deployments."
       },
       {
         "title": "Co-founder & Founding Full-Stack Engineer — Daskari",
@@ -505,7 +505,7 @@ export const I18N = {
       {
         "title": "Développeur mobile — BarberChat",
         "period": "Août 2026 – Présent · Temps plein · Sur site · Casablanca-Settat, Maroc",
-        "desc": "Développement des interfaces Flutter iOS et Android, collaboration sur les contrats REST et intégration JSON, refonte de la structure du code mobile, builds Android de production et déploiements bêta iOS via TestFlight."
+        "desc": "Développement des interfaces Flutter iOS et Android, fonctionnalités vidéo et audio, gestion du fil d’actualité et des stories, collaboration sur les contrats REST et intégration JSON, refonte de la structure du code mobile, builds Android de production et déploiements bêta iOS via TestFlight."
       },
       {
         "title": "Cofondateur et ingénieur full-stack fondateur — Daskari",
