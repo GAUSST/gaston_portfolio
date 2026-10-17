@@ -739,10 +739,5 @@ html[data-theme="light"] {
   --shadow: 0 18px 40px rgba(10, 10, 11, 0.08);
 }
 
-/* Role-based CV downloads */
-.cv-downloads { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
-.cv-download { display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; text-decoration: none; color: inherit; font-weight: 600; }
-.cv-download:hover, .cv-download:focus-visible { outline: 2px solid var(--accent, #8b5cf6); outline-offset: 3px; }
 .project-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
 .media-note { opacity: .75; font-style: italic; }
-@media (max-width: 700px) { .cv-downloads { grid-template-columns: 1fr; } }

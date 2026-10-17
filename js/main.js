@@ -170,7 +170,7 @@ function applyLanguage() {
   }
 
   const cv = document.getElementById("cvDownload");
-  if (cv) { cv.href = "#cvs"; cv.hidden = false; }
+  if (cv) { cv.href = translations[lang].cv; cv.hidden = false; }
 }
 
 document.getElementById("langToggle")?.addEventListener("click", () => {

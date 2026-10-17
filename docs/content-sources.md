@@ -1,6 +1,6 @@
 # Portfolio content sources
 
-Updated 17 October 2026. The three supplied CVs in `assets/CV_*.pdf` are the source for roles, dates, education, languages and personal contributions. They are original English documents, copied without modification. Existing freelance offerings and additional projects are retained.
+Updated 17 October 2026. The three supplied CVs informed roles, dates, education, languages and personal contributions. Only CV A is published, unchanged, as `assets/CV_A_FullStack_Product_Engineer.pdf`. The header retains a single direct CV link in both site languages.
 
 ## BarberChat
 

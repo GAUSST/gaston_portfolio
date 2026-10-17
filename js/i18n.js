@@ -13,7 +13,7 @@ export const I18N = {
       "contact": "Contact"
     },
     "actions": {
-      "downloadCv": "Choose a CV"
+      "downloadCv": "Download CV"
     },
     "hero": {
       "title": "Mobile & Full-Stack Product Engineer",
@@ -273,13 +273,6 @@ export const I18N = {
       "menuOpen": "Open menu",
       "menuClose": "Close menu"
     },
-    "cv": {
-      "title": "Choose your CV",
-      "note": "Three focused profiles. All PDFs are in English.",
-      "full": "Full-Stack Product Engineer",
-      "backend": "Spring Boot Backend Engineer",
-      "mobile": "Flutter Mobile Engineer"
-    },
     "education": {
       "title": "Education",
       "degree": "Professional University Degree (Licence Professionnelle) in Web Application Development and Mobile Technologies",
@@ -300,7 +293,7 @@ export const I18N = {
       "contact": "Contact"
     },
     "actions": {
-      "downloadCv": "Choisir un CV"
+      "downloadCv": "Télécharger CV"
     },
     "hero": {
       "title": "Ingénieur produit mobile & full-stack",
@@ -560,13 +553,6 @@ export const I18N = {
       "menuOpen": "Ouvrir le menu",
       "menuClose": "Fermer le menu"
     },
-    "cv": {
-      "title": "Choisissez votre CV",
-      "note": "Trois profils ciblés. Tous les PDF sont en anglais.",
-      "full": "Ingénieur produit full-stack",
-      "backend": "Ingénieur backend Spring Boot",
-      "mobile": "Ingénieur mobile Flutter"
-    },
     "education": {
       "title": "Formation",
       "degree": "Licence professionnelle en développement d’applications web et technologies mobiles",
@@ -739,7 +725,7 @@ export function applyI18n(refreshListCallback) {
   // CV Link
   const cv_btn = document.querySelector(".actions .btn.cv") || document.querySelector(".nav-utilities .btn.cv");
   if (cv_btn) {
-      cv_btn.href = "#cvs";
+      cv_btn.href = "assets/CV_A_FullStack_Product_Engineer.pdf";
   }
 
   // Update Toggle Text (View more/less)

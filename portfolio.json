@@ -138,11 +138,7 @@
     "portfolio": "https://gausst.github.io/gaston_portfolio/",
     "resume_html": "https://gausst.github.io/gaston_portfolio/resume.html",
     "github": "https://github.com/GAUSST",
-    "linkedin": "https://www.linkedin.com/in/gaoussoudiarra"
-  },
-  "cvs": [
-    "assets/CV_A_FullStack_Product_Engineer.pdf",
-    "assets/CV_B_SpringBoot_Backend_Engineer.pdf",
-    "assets/CV_C_Flutter_Mobile_Engineer.pdf"
-  ]
+    "linkedin": "https://www.linkedin.com/in/gaoussoudiarra",
+    "cv": "assets/CV_A_FullStack_Product_Engineer.pdf"
+  }
 }
