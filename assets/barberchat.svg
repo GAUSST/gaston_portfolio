@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">BarberChat product overview</title><desc id="desc">Barber discovery, appointments and grooming community. An editorial diagram, not an app screenshot.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#121b26"/><stop offset="1" stop-color="#233c46"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1450" cy="70" r="400" fill="#c5e9cc" opacity=".04"/>
+<g font-family="Arial, sans-serif"><text x="110" y="170" fill="#b8dbc7" font-size="24" letter-spacing="5">MOBILE PRODUCT · MOROCCO</text>
+<text x="105" y="300" fill="#ffffff" font-size="106" font-weight="700">BarberChat</text>
+<text x="110" y="370" fill="#c4d2da" font-size="31">Discovery. Booking. Community.</text>
+<g transform="translate(110 465)"><rect width="420" height="235" rx="24" fill="#ffffff" fill-opacity=".07"/><text x="30" y="62" fill="#b8dbc7" font-size="26">01 / DISCOVER</text><text x="30" y="126" fill="#fff" font-size="34">Find your barber</text><text x="30" y="180" fill="#c4d2da" font-size="25">Profiles &amp; specialties</text></g>
+<g transform="translate(590 465)"><rect width="420" height="235" rx="24" fill="#ffffff" fill-opacity=".07"/><text x="30" y="62" fill="#b8dbc7" font-size="26">02 / BOOK</text><text x="30" y="126" fill="#fff" font-size="34">Choose a time</text><text x="30" y="180" fill="#c4d2da" font-size="25">Available appointments</text></g>
+<g transform="translate(1070 465)"><rect width="420" height="235" rx="24" fill="#ffffff" fill-opacity=".07"/><text x="30" y="62" fill="#b8dbc7" font-size="26">03 / EXPLORE</text><text x="30" y="126" fill="#fff" font-size="34">Find inspiration</text><text x="30" y="180" fill="#c4d2da" font-size="25">Grooming content feed</text></g>
+<text x="110" y="806" fill="#b8dbc7" font-size="25">Flutter · iOS &amp; Android</text><text x="1490" y="806" text-anchor="end" fill="#c4d2da" font-size="21">PRODUCT OVERVIEW</text></g></svg>

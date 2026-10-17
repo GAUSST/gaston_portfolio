@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n="meta.title">Gaoussou Diarra — Portfolio</title>
   <meta name="description" data-i18n-attr="content:meta.desc"
-        content="Portfolio of Gaoussou Diarra — product-oriented full-stack developer building websites, mobile apps, MVPs, dashboards, e-commerce systems, and AI-assisted workflows." />
+        content="Gaoussou Diarra — Mobile &amp; Full-Stack Product Engineer in Casablanca. Flutter, Java/Spring Boot, fintech, marketplaces and AI-assisted workflows." />
   <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome 6 Free (CDN) -->
@@ -31,7 +31,7 @@
           <i class="fa-solid fa-moon moon" aria-hidden="true"></i>
         </button>
 
-        <a class="btn cv" href="" target="_blank" rel="noopener" data-i18n="actions.downloadCv">Download CV</a>
+        <a class="btn cv" href="#cvs" data-i18n="actions.downloadCv">Choose a CV</a>
       </div>
     </div>
   </header>
@@ -41,15 +41,15 @@
     <section class="hero container" id="about">
       <div class="hero-grid">
         <div class="card reveal about">
-          <h1 class="title-xl" data-i18n="hero.title">I build websites, apps, MVPs, and AI-assisted workflows.</h1>
+          <h1 class="title-xl" data-i18n="hero.title">Mobile &amp; Full-Stack Product Engineer</h1>
 
           <div>
             <div class="avatar" aria-hidden="true">GD</div>
           </div>
           <div class="about-copy">
-            <p class="subtitle hero-summary" data-i18n="about.p1" data-i18n-html>Hello! I’m …</p>
-            <p class="small hero-secondary" data-i18n="about.p2">Fluent in French & English …</p>
-            <p class="small trust-line" data-i18n="about.p3">Languages: French, English, and Bambara. Available for freelance projects, MVPs, websites, dashboards, and AI-assisted workflows.</p>
+            <p class="subtitle hero-summary" data-i18n="about.p1" data-i18n-html>I’m Gaoussou Diarra, a mobile and full-stack product engineer based in Casablanca.</p>
+            <p class="small hero-secondary" data-i18n="about.p2">Flutter · Java/Spring Boot · Fintech &amp; marketplaces</p>
+            <p class="small trust-line" data-i18n="about.p3">Bambara (native) · French (fluent) · English (professional working proficiency) · Arabic (intermediate).</p>
             <div class="hero-actions">
               <a class="btn" href="#contact" data-i18n="hero.ctaPrimary">Start a project</a>
               <a class="btn secondary" href="#projects" data-i18n="hero.ctaSecondary">View projects</a>
@@ -64,6 +64,16 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section container" id="cvs" aria-labelledby="cv-title">
+      <h2 id="cv-title" data-i18n="cv.title">Choose your CV</h2>
+      <p class="small" data-i18n="cv.note">Three focused profiles. All PDFs are in English.</p>
+      <div class="cv-downloads">
+        <a class="card cv-download" href="assets/CV_A_FullStack_Product_Engineer.pdf" download><span data-i18n="cv.full">Full-Stack Product Engineer</span><span class="small">PDF · EN ↓</span></a>
+        <a class="card cv-download" href="assets/CV_B_SpringBoot_Backend_Engineer.pdf" download><span data-i18n="cv.backend">Spring Boot Backend Engineer</span><span class="small">PDF · EN ↓</span></a>
+        <a class="card cv-download" href="assets/CV_C_Flutter_Mobile_Engineer.pdf" download><span data-i18n="cv.mobile">Flutter Mobile Engineer</span><span class="small">PDF · EN ↓</span></a>
       </div>
     </section>
 
@@ -161,6 +171,17 @@
           <span class="tag" data-type="backend" role="listitem">Spring Boot</span>
           <span class="tag" data-type="backend" role="listitem">Python</span>
           <span class="tag" data-type="tool" role="listitem">Git/GitHub/GitLab</span>
+          <span class="tag" data-type="tool" role="listitem">Riverpod</span>
+          <span class="tag" data-type="tool" role="listitem">Dio</span>
+          <span class="tag" data-type="tool" role="listitem">Firebase</span>
+          <span class="tag" data-type="tool" role="listitem">Crashlytics</span>
+          <span class="tag" data-type="tool" role="listitem">Docker</span>
+          <span class="tag" data-type="tool" role="listitem">FastAPI</span>
+          <span class="tag" data-type="tool" role="listitem">Google Cloud Storage</span>
+          <span class="tag" data-type="tool" role="listitem">SSE</span>
+          <span class="tag" data-type="tool" role="listitem">PayDunya</span>
+          <span class="tag" data-type="tool" role="listitem">TypeScript</span>
+          <span class="tag" data-type="tool" role="listitem">Next.js</span>
         </div>
         <p class="small" style="margin-top:.75rem" data-i18n="skills.tip">Click a technology to see related projects.</p>
       </div>
@@ -171,6 +192,14 @@
       <div class="card reveal timeline"></div>
     </section>
 
+    <section class="section container" id="education" aria-labelledby="education-title">
+      <h2 id="education-title" data-i18n="education.title">Education</h2>
+      <div class="card reveal">
+        <h3 data-i18n="education.degree">Professional University Degree (Licence Professionnelle) in Web Application Development and Mobile Technologies</h3>
+        <p data-i18n="education.school">École Supérieure de Technologie de Casablanca, Université Hassan II · Mention: Assez Bien</p>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="section container" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title" data-i18n="contact.title">Start a Project</h2>
@@ -178,7 +207,8 @@
         <div class="card reveal">
           <p><strong data-i18n="contact.emailLbl">Email:</strong> <a href="mailto:gdiarrag@gmail.com">gdiarrag@gmail.com</a></p>
           <p><strong data-i18n="contact.phoneLbl">Phone:</strong> <a href="tel:+212779043150">+212 779043150</a></p>
-          <!-- <p><strong data-i18n="contact.locationLbl">Location:</strong> Near Casa Voyageurs, Casablanca</p> -->
+          <p><strong data-i18n="contact.locationLbl">Location:</strong> Casablanca, Morocco</p>
+          <p><a href="https://github.com/GAUSST" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/gaoussoudiarra" target="_blank" rel="noopener">LinkedIn</a></p>
           <div class="pill-group" style="margin-top:.5rem">
             <a class="btn secondary" href="mailto:gdiarrag@gmail.com" data-i18n="contact.emailMe">Email me</a>
             <a class="btn secondary" href="https://wa.me/212779043150" target="_blank" rel="noopener">

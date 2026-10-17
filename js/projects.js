@@ -74,6 +74,7 @@ function renderProjects(items) {
       }" loading="lazy" width="800" height="450" />
         <div class="meta below">
           <h3>${p.title}</h3>
+          ${p.mediaNote ? `<p class="small media-note">${L(p, "mediaNote")}</p>` : ""}
           <p class="small">${L(p, "subtitle")}</p>
           <p class="desc">${L(p, "description")}</p>
           ${
@@ -89,6 +90,7 @@ function renderProjects(items) {
               ? `<div style="margin-top:.5rem"><a class="btn secondary" href="${p.link}" target="_blank" rel="noopener">${I18N[lang].projects.view}</a></div>`
               : ""
           }
+          ${p.links ? `<div class="project-links">${p.links.map(link => `<a class="btn secondary" href="${link.url}" target="_blank" rel="noopener">${link.label}</a>`).join("")}</div>` : ""}
         </div>
       </article>`
     )
